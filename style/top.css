@@ -1,0 +1,169 @@
+.topCont {
+    width: 25.6rem;
+    height: 1.29rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: url(../images/home/top_bg.png) no-repeat 0 0;
+    background-size: 100% auto;
+    display: none;
+}
+.topCont .topLogo {
+    position: absolute;
+    left: 0.82rem;
+    top: 0.24rem;
+    width: 2.64rem;
+}
+
+.topCont .log_box {
+    position: absolute;
+    width: 6.33rem;
+    height: 0.47rem;
+    right: 1.48rem;
+    top: 0.13rem;
+    z-index: 10;
+}
+.topCont .log_box .btn_login {
+    position: absolute;
+    width: 1.4rem;
+    height: 0.47rem;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.topCont .user_info_box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.topCont .user_info_box .btn_logout {
+    float: right;
+    width: 1.4rem;
+    height: 0.47rem;
+    cursor: pointer;
+}
+.topCont .user_info_box p {
+    float: right;
+    height: 0.47rem;
+    padding-right: 0.1rem;
+    font-size: 0.24rem;
+    line-height: 0.47rem;
+    color: #fff;
+    text-shadow: 0 0 1px #1b1e35, 0 0 3px #1b1e35, 0 0 5px #1b1e35, 0 0 7px #1b1e35;
+}
+
+.topCont .topNav {
+    width: 12rem;
+    height: 0.77rem;
+    position: absolute;
+    left: 4.96rem;
+    top: 0;
+}
+.topCont .topline {
+    float: left;
+    width: 0.02rem;
+    height: 0.74rem;
+    display: flex;
+    align-items: center;
+}
+.topCont .topline:after {
+    display: block;
+    width: 100%;
+    height: 0.44rem;
+    background: #3e3f4f;
+    content: "";
+}
+.topCont .topDiv {
+    float: left;
+    width: 2.32rem;
+    height: 0.74rem;
+}
+.topCont .topDiv a.link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+}
+.topCont .topDiv a.link:after {
+    width: 100%;
+    height: 0.07rem;
+    background: #d3000d;
+    position: absolute;
+    left: 0;
+    bottom: -0.03rem;
+    display: none;
+    content: "";
+}
+.topCont .topDiv a.link.on,
+.topCont .topDiv a.link:hover::after,
+.topCont .topDiv a.link:hover {
+    background-position: 0 -0.74rem;
+    display: block;
+}
+
+.topCont .topDiv a.link:hover:after {
+    background-position: 0 -0.74rem;
+    display: block;
+}
+
+/* .top_en .log_box .btn_login {
+    background: url(https://opmw.perfectworld.com/net/240115invite/en/images/btn_login2.png);
+    background-size: 100% auto;
+}
+.top_en .user_info_box .btn_logout {
+    background: url(https://opmw.perfectworld.com/net/240115invite/en/images/btn_logout2.png);
+    background-size: 100% auto;
+} */
+.top_en .topDiv a.home {
+    background-image: url(../images/home/en_home.png);
+}
+.top_en .topDiv a.about {
+    background-image: url(../images/home/en_about.png);
+}
+.top_en .topDiv a.tokenomics {
+    background-image: url(../images/home/en_tokenomics.png);
+}
+.top_en .topDiv a.roadmap {
+    background-image: url(../images/home/en_roadmap.png);
+}
+.top_en .topDiv a.howToBuy {
+    background-image: url(../images/home/en_howtobuy.png);
+}
+
+/* .top_th .log_box .btn_login {
+    background: url(https://opmw.perfectworld.com/net/240115invite/th/images/btn_login2.png);
+    background-size: 100% auto;
+}
+.top_th .user_info_box .btn_logout {
+    background: url(https://opmw.perfectworld.com/net/240115invite/th/images/btn_logout2.png);
+    background-size: 100% auto;
+} */
+/* .top_th .topDiv a.home {
+    background-image: url(https://opmw.perfectworld.com/public/images/top/th_home.png);
+}
+.top_th .topDiv a.characters {
+    background-image: url(https://opmw.perfectworld.com/public/images/top/th_characters.png);
+}
+.top_th .topDiv a.media {
+    background-image: url(https://opmw.perfectworld.com/public/images/top/th_media.png);
+}
+.top_th .topDiv a.event {
+    background-image: url(https://opmw.perfectworld.com/public/images/top/th_event.png);
+} */
+@media screen and (min-width: 751px) {
+    .topCont {
+        display: block;
+    }
+}
+@media screen and (max-width: 750px) {
+    .topCont {
+        display: none;
+    }
+}

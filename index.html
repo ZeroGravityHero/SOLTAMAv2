@@ -1,0 +1,756 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=no"/>
+        <meta property="fb:app_id" content="753895892824985"/>
+        <meta property="og:url" content="/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="SOLTAMA, the Saitama of Solana"/>
+        <meta property="og:description" content="The Official Saitama in Solana, SOLTAMA! Join us to explore an immersive world inspired by the beloved Saitama."/>
+        <meta property="og:image" content="https://imagizer.imageshack.com/img922/3634/1qUuqb.png"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="670"/>
+        <link rel="shortcut icon" href="./images/home/store_icon.png"/>
+        <link rel="apple-touch-icon" href="./images/home/store_icon.png"/>
+        <!-- <meta name="Keywords" content="One Punch
+,One Punch Man,One Punch Mobile Game,One Punch Man Mobile Game,One Punch Man World,One Punch Man: World,Action,Action Mobile Game,ACT,ARPG,Mobile Game,Co-Op,Saitama,Genos,Tatsumaki, Tornado,Fubuki, Blizzard,Action 3D,Sandbox World, Open World,Immersive World,Pre-registration Reward,Perfect World"/>
+        <meta name="Description" content="Welcome to One Punch Man: World - the first official action mobile game. With action-packed gameplay and a high-fidelity physics engine, the game delivers intense combat that rivals console games. We've also recreated the world and characters from the original story with meticulous attention to detail, and combined it with an open-world concept that offers endless fun - all at your fingertips!"/> -->
+        <link rel="Shortcut Icon" href="./images/home/favicon.ico"/>
+        <link rel="bookmark" href="./images/home/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="./style/swiper-4.5.0.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./style/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./style/index240118.css"/>
+        <link rel="stylesheet" type="text/css" href="./style/top.css"/>
+        <link rel="stylesheet" type="text/css" href="./style/login_en.css"/>
+        <style>
+            /* Add CSS styles for the glowing effect */
+            img {
+                transition: filter 0.5s ease-in-out;
+            }
+    
+            .glow {
+                filter: brightness(1.5);
+            }
+        </style>
+
+        <script type="text/javascript" src="./js/isMobile.js"></script>
+        <script type="text/javascript">
+            var is_mobile = isMobile();
+            var is_ipad = /ipad/i.test(navigator.userAgent);
+            if (is_mobile && !is_ipad) {
+                var viewport = document.querySelector('meta[name=viewport]');
+                viewport.setAttribute('content', 'width=750,user-scalable=no');
+            } else {
+                (function(doc, win) {
+                    var docEl = doc.documentElement
+                      , resizeEvt = 'orientationchange'in window ? 'orientationchange' : 'resize'
+                      , recalc = function() {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth)
+                            return;
+                        var wid = 100 * (clientWidth / 2560);
+                        docEl.style.fontSize = wid + 'px';
+                    };
+                    if (!doc.addEventListener)
+                        return;
+                    win.addEventListener(resizeEvt, recalc, false);
+                    recalc();
+                    //doc.addEventListener('DOMContentLoaded', recalc, false);
+                }
+                )(document, window);
+            }
+            var language = 'en';
+            var textCopySucc = 'Copied'
+              , textCopyFail = 'Copy Failed'
+              , textErrorNormal = 'Retry Later';
+            var msgData = {
+                '-900': 'Please log in first',
+                '-102': 'The event has not yet started',
+                '-103': 'The event has ended',
+                '-104': 'The event is under maintenance',
+                '-1001': 'Reservation Failed',
+                '-1002': 'Failed to Record Reservation for Lottery Entry',
+                '-1005': 'Failed to Record Reservation for Lottery Entry',
+                '-2001': 'Insufficient Chances',
+                '-2002': 'Lottery Entry limit reached',
+                '-2003': 'Failed to Deduct Lottery Entry',
+                '-2004': 'Lottery failed, please try again later',
+                '-10002': 'Please bind your phone number first',
+                '-10003': 'Reservation failed',
+                '-10004': 'IP reservation volume exceeds limit',
+                '-10005': 'Reservation execution failed',
+                '99998': 'Phone number has been bound successfully !',
+            }
+        </script>
+        <title>SOLTAMA, the Saitama of Solana</title>
+    </head>
+    <body>
+        <div class="wrap" id="homeSection">
+            <img src="./images/home/soltamatablogo.png" alt="SOLTAMA Logo" class="logo"/>
+            <!--sns-->
+            <!-- <div class="selectLag publicGoogleAnalytics" type="language_default_click">
+                <div class="selectlist">
+                    <span class="on publicGoogleAnalytics" type="languageen_default_click">EN</span>
+                    <a class="publicGoogleAnalytics" type="languageth_default_click" href="https://opmw.perfectworld.com/th/index.html">TH</a>
+                </div>
+            </div> -->
+            <div class="sns_box">
+                <a class="sns_jup publicGoogleAnalytics" type="facebook_default_click" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" href="https://jup.ag/swap/SOL-SOLTAMA_BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz" target="_blank"></a>
+                <a class="sns_ds publicGoogleAnalytics" type="facebook_default_click" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" href="https://dexscreener.com/solana/8m9qzsjkq4af13uup2q3uo63n2dj1kjcwybthnvwclvh" target="_blank"></a>
+                <a class="sns_tg publicGoogleAnalytics" type="discord_default_click" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" href="https://t.me/+XgmXVmQ9ggYyZjhk" target="_blank"></a>
+                <a class="sns_x publicGoogleAnalytics" type="youtube_default_click" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" href="https://twitter.com/soltama_" target="_blank"></a>
+                <!-- <a class="sns_ins publicGoogleAnalytics" type="instagram_default_click" href="https://www.instagram.com/onepunchman.world/" target="_blank"></a> -->
+                <!--<a class="sns_line" href="#" target="_blank"></a>-->
+            </div>
+            <!-- <div id="copy_text">©ONE, Yusuke Murata/SHUEISHA, Hero Association HQ</div> -->
+            <span class="icon_down"></span>
+            <!-- <a class="btn_event" href="https://opmw.perfectworld.com/net/240115invite/en/index.html" target="_blank">
+                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_event.png" alt="onepunchmanworld/bonus/switch/button/Blizzard/fubiki/friends">
+            </a> -->
+            <!--page-->
+            <div class="swiper page_swiper">
+                <div class="swiper-wrapper page_wrapper">
+                    <!--head-->
+                    <div class="swiper-slide section_head" id="homeSection">
+                        <video id="bg_video" src="./images/home/videobg.mp4" loop muted></video>
+                        <a class="link_jup publicGoogleAnalytics" type="facebook_default_click" href="https://jup.ag/swap/SOL-SOLTAMA_BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz"></a>
+                        <a class="link_ds publicGoogleAnalytics" type="facebook_default_click" href="https://dexscreener.com/solana/8m9qzsjkq4af13uup2q3uo63n2dj1kjcwybthnvwclvh"></a>
+                        <a class="link_tg publicGoogleAnalytics" type="facebook_default_click" href="https://t.me/+XgmXVmQ9ggYyZjhk"></a>
+                        <a class="link_X publicGoogleAnalytics" type="facebook_default_click" href="https://twitter.com/Soltama_"></a>
+                        <img src="./images/home/SOLTAMA_LOGO.png" alt="Soltama Official Logo" class="slogan"/>
+                        
+                        <div class="btn_wrap1">
+                            <!-- <span class="btn_head_v publicGoogleAnalytics" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" type="videoClick_default_click"></span> -->
+                            <div class="select_button_wrap btn_yy1_pc">
+                                <!-- <img src="./images/home/contractAddress.png" class="select_button1 btn_login_click btn_yy btn_yy1 publicGoogleAnalytics" onclick="copyText('BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz', this); glowEffect(this);" type="preregisterClick_P2_default_click" alt="Contract Address"/> -->
+                                
+                                <!-- <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_Bind.png" class="select_button2 btn_bindphone btn_yy btn_yy1 publicGoogleAnalytics" type="preregisterClick_P2_default_click" alt="onepunchmanworld/preregister/bindphone/preregistration/date/bind/phonenumber"/>
+                                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_registercomplete.png" class="select_button3 btn_yy btn_yy1" alt="onepunchmanworld/completed/preregister/button/preregistration/UI/event"/> -->
+                            </div>
+                            <!-- <img src="./images/mobile/contractAddress2.png" onclick="copyText('BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz', this); glowEffect(this);" class="btn_login_click btn_yy btn_yy1 btn_yy1_m publicGoogleAnalytics" type="preregisterClick_P2_default_click" alt="Contract Address"/> -->
+                            
+                        </div>
+                        
+                        
+                        <div class="storeBtns">
+                            <a href="https://jup.ag/swap/SOL-SOLTAMA_BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz" target="_blank" id="glow-image" class="appStore publicGoogleAnalytics" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" type="ApplePreregister_default_click"></a>
+                            <a href="https://dexscreener.com/solana/8m9qzsjkq4af13uup2q3uo63n2dj1kjcwybthnvwclvh" target="_blank" id="glow-image" class="down_launcher dexScreener publicGoogleAnalytics" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" type=""></a>
+                            <img src="./images/home/contractAddress.png" class="select_button1 btn_login_click btn_yy btn_yy1 publicGoogleAnalytics" onclick="copyText('BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz', this); glowEffect(this);" type="preregisterClick_P2_default_click" alt="Contract Address"/>
+                            <a href="https://t.me/+XgmXVmQ9ggYyZjhk" target="_blank" id="glow-image" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" class="googleStore publicGoogleAnalytics" type="GooglePreregister_default_click"></a>
+                            <a href="https://twitter.com/soltama_" target="_blank" id="glow-image" onmouseover="toggleGlow(this, 'over')" onmouseout="toggleGlow(this, 'out')" class="huaweiStore publicGoogleAnalytics" type="HuaweiPreregister_default_click"></a>
+                            
+                        </div>
+                    </div>
+
+
+
+   
+ 
+
+                    <!--role-->
+
+
+                    <div class="swiper-slide section_role" id="aboutSection">
+                        
+                        <div class="section_t_role"></div>
+                        <div class="swiper role_swiper swiper-no-swiping">
+                            <div class="swiper-wrapper">
+                                <!--qiyu-->
+                                <div class="swiper-slide role_qiyu">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <div></div>
+                                        <img src="./images/about/firstslot_big.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="About Slot"/>
+                                        <img src="./images/about/firstslot_big.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="About Slot"/>
+                                        <!-- <div class="role_video_box">
+                                            <video src="https://gamesvmg.wmupd.com/webops/syjyQ.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline controls preload></video>
+                                        </div> -->
+                                        <!-- <ul class="role_video_tab_box">
+                                            <li class="qiyu_video_tab1 publicGoogleAnalytics on" type="saitamaskill_saitamaskill1_click" data-text="Saitama - Dreamworld bombards the target with consecutive punches. It turns into Special Attacks after a dodge. Saitama then sends the target into the air with his powerful kick, and launches a pursuit against it." vsrc="https://gamesvmg.wmupd.com/webops/syjyQ.mp4"></li>
+                                            <li class="qiyu_video_tab2 publicGoogleAnalytics" type="saitamaskill_saitamaskill2_click" data-text="Saitama - Dreamworld jumps and dashes forward, hacking the enemy with the Downstroke. It turns into Special Attacks after a dodge. Saitama then jumps to the target and falls from the sky to launch a powerful attack on the target." vsrc="https://gamesvmg.wmupd.com/webops/syjyE.mp4"></li>
+                                            <li class="qiyu_video_tab3 publicGoogleAnalytics" type="saitamaskill_saitamaskill3_click" data-text="Saitama - Dreamworld attacks that hit can accumulate Hot-blooded. Hot-blooded Mode unlocks when Hot-blooded is full. This Mode significantly increases Saitama's Stamina recovery speed, and enhances all Special Attacks, while replacing Hot-blooded Resonance with All-Out Strike. " vsrc="https://gamesvmg.wmupd.com/webops/1_qyskill03_20230524.mp4"></li>
+                                        </ul> -->
+                                        <div class="role_video_text appear-from-bottom">Brace yourself for Soltama – where the force of One Punch meets the flavor of One Pinch of Salt in the Crypto Universe! Prepare to amplify your portfolio with Soltama's unique blend of gains and giggles. Brace yourself for a journey of HODLing, sprinkling, and conquering the crypto realm like never before! Unleash the power of laughter and spice up your investment strategy with Soltama's secret sauce. Get ready for a thrilling adventure in the crypto space!</div>
+                                    </div>
+                                </div>
+                                
+                                <!--jns-->
+                                <div class="swiper-slide role_jns">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <img src="./images/about/secondslot_big.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Tokenomics Slot"/>
+                                        <img src="./images/about/secondslot_big.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Tokenomics Slot"/>
+                                        <!-- <div class="role_video_box"> -->
+                                            <!-- <video src="https://gamesvmg.wmupd.com/webops/jnsQjn.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline controls preload></video> -->
+                                        <!-- </div> -->
+                                        <ul class="role_video_tab_box">
+                                            <!-- <li class="jns_video_tab1 publicGoogleAnalytics on" type="Genosskill_Genosskill1_click" data-text="Genos uses his cyborg arm to release a flame attack, dealing DMG to the enemy. Genos can enhance [Burning] up to 2 times via Energy Charging, and each enhance will increases the DMG dealt by [Burning]. When released, [Burning] will consume all the charged energy." vsrc="https://gamesvmg.wmupd.com/webops/jnsQjn.mp4"></li>
+                                            <li class="jns_video_tab2 publicGoogleAnalytics" type="Genosskill_Genosskill2_click" data-text="Genos shoots a beam of laser to attack the target and deal DMG to it.<br>Quick Energy Charging: When released, the power of [Burning] will be boosted by 2 levels." vsrc="https://gamesvmg.wmupd.com/webops/jnsEjn.mp4"></li>
+                                            <li class="jns_video_tab3 publicGoogleAnalytics" type="Genosskill_Genosskill3_click" data-text="Genos will overload his own energy. When released, Genos' next normal attack will release Strike 6.<br>Energy Refill: When [Burning] enhanced by 2 levels hits the target, the [Recharge] chances will be increased." vsrc="https://gamesvmg.wmupd.com/webops/jnsRjn.mp4"></li> -->
+                                        </ul>
+                                        <div class="role_video_text2 appear-from-bottom">
+                                            Symbol: $SOLTAMA
+                                            <br>
+                                            Contract Address: BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz
+                                            <br>
+                                            <br>
+                                            Total Supply: 10,000,000 Supply
+                                            <br>
+                                            Tax: 0/0
+                                            <br>
+                                            LP Tokens Burned
+                                            <br>
+                                            Contract Renounced
+                                            <br>
+                                            No Team Tokens
+                                            <br>
+                                            No Whitelist
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--yzws-->
+                                <div class="swiper-slide role_yzws">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <img src="./images/about/thirdslot_big.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Features Slot"/>
+                                        <img src="./images/about/thirdslot_big.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Features Slot"/>
+                                        <!-- <div class="role_video_box">
+                                            <video src="https://gamesvmg.wmupd.com/webops/yzwsjdsQ.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline="true" controls preload></video>
+                                        </div> -->
+                                        <ul class="role_video_tab_box">
+                                            <!-- <li class="yzws_video_tab1 publicGoogleAnalytics on" type="ASskill_ASskill1_click" data-text="Atomic Samurai sheathes his Katana and switches to Iaido. If attacked at this moment, Atomic Samurai will trigger accurate dodge. Tap the normal attack button again and Atomic Samurai will launch several rapid slashes, dealing DMG to the target and spot two of its Weaknesses." vsrc="https://gamesvmg.wmupd.com/webops/yzwsjdsQ.mp4"></li>
+                                            <li class="yzws_video_tab2 publicGoogleAnalytics" type="ASskill_ASskill2_click" data-text="Atomic Samurai blinks quickly around the target and launches several slashes. For each hit, Atomic Samurai will find a Weakness of the target." vsrc="https://gamesvmg.wmupd.com/webops/yzwsjdsE.mp4"></li>
+                                            <li class="yzws_video_tab3 publicGoogleAnalytics" type="ASskill_ASskill3_click" data-text="Atomic Samurai changes his posture and switches to Drawn Slash, and quickly turns to slash the target. If hits the target with a Spin Slash, Atomic Samurai will spot a Weakness of the target." vsrc="https://gamesvmg.wmupd.com/webops/yzwsjhsQ.mp4"></li>
+                                            <li class="yzws_video_tab4 publicGoogleAnalytics" type="ASskill_ASskill4_click" data-text="After the first tap, Atomic Samurai sheathes his katana and makes the Iaido posture. When making the posture, tap the button again to launch a rapid slash. If attacked when slashing, the power of this slash will be enhanced, dealing massive DMG to the target and making it enter the Armor Piercing state." vsrc="https://gamesvmg.wmupd.com/webops/yzwsjhsE.mp4"></li> -->
+                                        </ul>
+                                        <div class="role_video_text appear-from-bottom">    
+                                        Soltama ($SOLTAMA) distinguishes itself through quick transactions on the Solana blockchain, guaranteeing efficiency and rapidity in every transaction. This initiative is community-driven, empowering $SOLTAMA holders to participate in governance decisions and fostering a sense of collective influence. Experience transactions without fees, elevating accessibility and affordability within the SOLTAMA ecosystem.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--snk-->
+                                <div class="swiper-slide role_snk">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <img src="./images/about/fourthslot_big.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Team Slot"/>
+                                        <img src="./images/about/fourthslot_big.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="Team Slot"/>
+                                        <!-- <div class="role_video_box">
+                                            <video src="https://gamesvmg.wmupd.com/webops/snkQ.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline controls preload></video>
+                                        </div> -->
+                                        <ul class="role_video_tab_box">
+                                            <!-- <li class="snk_video_tab1 publicGoogleAnalytics on" type="Sonicskill_Sonicskill1_click" data-text="By consuming a small amount of Topspeed, Speed-o'-Sound Sonic blinks to the front of the target and stabs it." vsrc="https://gamesvmg.wmupd.com/webops/snkQ.mp4"></li>
+                                            <li class="snk_video_tab2 publicGoogleAnalytics" type="Sonicskill_Sonicskill2_click" data-text="Speed-o'-Sound Sonic blinks to the target and launches two piercing attacks.<br>If Speed-o'-Sound Sonic is knocked away, he can consume a small amount of Topspeed to launch the [Strike] for counterattack.<br>When [Strike] is over, it can be seamlessly linked to the Strike 3 of [Normal Attack - Slashes]." vsrc="https://gamesvmg.wmupd.com/webops/snkE.mp4"></li>
+                                            <li class="snk_video_tab3 publicGoogleAnalytics" type="Sonicskill_Sonicskill3_click" data-text="This skill can only be released when the Topspeed reaches level 4.
+                                    By consuming a large amount of Topspeed, Speed-o'-Sound Sonic generates a blade storm with his katana and wreaks havoc on the ground; he then lifts the target up to the air and launches brutal combos, dealing massive DMG.<br>Movements can be controlled when he's on the ground." vsrc="https://gamesvmg.wmupd.com/webops/snkR.mp4"></li> -->
+                                        </ul>
+                                        <div class="role_video_text appear-from-bottom">The SOLTAMA team is a dynamic collective of individuals, each bringing diverse specializations to the table. Committed and dependable, our team is available around the clock to provide assistance. With open lines of communication and readily available funds, we prioritize the needs of our community, ensuring a responsive and supportive environment for all holders.</div>
+                                    </div>
+                                </div>
+                                <!-- smile -->
+                                <!-- <div class="swiper-slide role_smile">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_smileman.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="onepunchmanworld/smileman/A/b/c/Ahero/red"/>
+                                        <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_smileman.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="onepunchmanworld/smileman/A/b/c/Ahero/red"/>
+                                        <div class="role_video_box">
+                                            <video src="https://gamesvmg.wmupd.com/webops/HERO_WeiXiaoXia_NORMAL_01.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline controls preload></video>
+                                        </div>
+                                        <ul class="role_video_tab_box">
+                                            <li class="smile_video_tab1 publicGoogleAnalytics on" type="SMskill_SMskill1_click" data-text="Smile Man wields the ken for attacks and throws the ball out. Both the ken and the ball will deal DMG to enemies. Upon reaching the farthest point, the ball will return to Smile Man and deal DMG to enemies along the way again." vsrc="https://gamesvmg.wmupd.com/webops/HERO_WeiXiaoXia_NORMAL_01.mp4"></li>
+                                            <li class="smile_video_tab2 publicGoogleAnalytics" type="SMskill_SMskill2_click" data-text="Smile Man rotates the ken to attack surrounding enemies continuously.<br>During the skill, if Smile Man catches the ball from a [Swing In], he will release this skill again." vsrc="https://gamesvmg.wmupd.com/webops/HERO_WeiXiaoXia_NORMAL_02_02.mp4"></li>
+                                            <li class="smile_video_tab3 publicGoogleAnalytics" type="SMskill_SMskill3_click" data-text="Smile Man consumes Smile Energy to release a jump bash that crushes everything. According to the number of stacks of Smile Energy consumed, Smile Man will use two different Kendama techniques." vsrc="https://gamesvmg.wmupd.com/webops/HERO_WeiXiaoXia_NORMAL_03_02.mp4"></li>
+                                        </ul>
+                                        <div class="role_video_text">Smile Man wields the ken for attacks and throws the ball out. Both the ken and the ball will deal DMG to enemies. Upon reaching the farthest point, the ball will return to Smile Man and deal DMG to enemies along the way again.</div>
+                                    </div>
+                                </div> -->
+                                <!--mks-->
+                                <!-- <div class="swiper-slide role_mks">
+                                    <div class="role_center">
+                                        <div class="role_tab_line"></div>
+                                        <div class="role_decorative ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+                                        <div class="role_info ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></div>
+                                        <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_lightningmax.png" class="role_img role_img_pc ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="onepunchmanworld/lightningmax/leg/speed/light/handsome/weak"/>
+                                        <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_lightningmax.png" class="role_img role_img_m ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" alt="onepunchmanworld/lightningmax/leg/speed/light/handsome/weak"/>
+                                        <div class="role_video_box">
+                                            <video src="https://gamesvmg.wmupd.com/webops/HERO_INAZUMAX_NORMAL_01.mp4" autoplay muted="true" loop webkit-playsinline="true" playsinline controls preload></video>
+                                        </div>
+                                        <ul class="role_video_tab_box">
+                                            <li class="mks_video_tab1 publicGoogleAnalytics on" type="LMskill_LMskill1_click" data-text="Lightning Max ignites the Gunpowder hidden in his shoes and releases the true Ogi.<br>According to the different timing of Lightning Max's ignition, he can fire up at most 6 Gunpowder." vsrc="https://gamesvmg.wmupd.com/webops/HERO_INAZUMAX_NORMAL_01.mp4"></li>
+                                            <li class="mks_video_tab2 publicGoogleAnalytics" type="LMskill_LMskill2_click" data-text="Lightning Max jumps up and charges forward. If he meets an enemy midway, Lightning Max will launch his Rapid Kicks and his ATK will increase based on the charging distance." vsrc="https://gamesvmg.wmupd.com/webops/HERO_INAZUMAX_NORMAL_02.mp4"></li>
+                                            <li class="mks_video_tab3 publicGoogleAnalytics" type="LMskill_LMskill3_click" data-text="Lightning Max throws 3 powerful Roundhouse Kicks at the enemy ahead. [Roundhouse Kick] under the Ignition state will become [Lightning Roundhouse Kick]." vsrc="https://gamesvmg.wmupd.com/webops/HERO_INAZUMAX_NORMAL_03.mp4"></li>
+                                        </ul>
+                                        <div class="role_video_text">
+                                            Lightning Max ignites the Gunpowder hidden in his shoes and releases the true Ogi.<br/>According to the different timing of Lightning Max's ignition, he can fire up at most 6 Gunpowder.
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="role_tab">
+                            <span class="btn_role_prev publicGoogleAnalytics" type="leftclick_default_click"></span>
+                            <span class="btn_role_next publicGoogleAnalytics" type="rightclick_default_click"></span>
+                            <div class="role_tab_hide">
+                                <div class="swiper role_tab_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="role_card card_qiyu publicGoogleAnalytics" type="Saitama_default_click">
+                                                <img src="./images/about/slot1_s.png" alt="About"/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="role_card card_jns publicGoogleAnalytics" type="Genos_default_click">
+                                                <img src="./images/about/slot2_s.png" alt="Tokenomics"/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="role_card card_yzws publicGoogleAnalytics" type="AtomicSamurai_default_click">
+                                                <img src="./images/about/slot3_s.png" alt="Features"/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="role_card card_snk publicGoogleAnalytics" type="Sonic_default_click">
+                                                <img src="./images/about/slot4_s.png" alt="Team"/>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="swiper-slide">
+                                            <div class="role_card card_smile publicGoogleAnalytics" type="SmileMan_default_click">
+                                                <img src="https://opmw.perfectworld.com/en/images/index2306/role_tab_smile_on.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="role_card card_mks publicGoogleAnalytics" type="LightningMax_default_click">
+                                                <img src="https://opmw.perfectworld.com/en/images/index2306/role_tab_mks_on.png" alt=""/>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+                    <!--lcb-->
+                    <div class="swiper-slide section_lcb" id="roadmapSection">
+                        <div class="section_t_lcb"></div>
+                        <div class="lcb_wrap">
+                            <div class="lcb_slogan"></div>
+                            <div class="lcb_cont">
+                                <div class="lcb_num"></div>
+                                <div class="progress_line">
+                                    <div id="process_w"></div>
+                                </div>
+                                <ul class="lcb_gift">
+                                    <li id="prize_p1">
+                                        <div class="prize_bg prize_bg_pc">
+                                            <img src="./images/roadmap/roadmap_p1.png" class="prize_bg1" alt="Phase 1"/>
+                                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_prize_150k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/money/milestone"/>
+                                        </div>
+                                        <div class="prize_bg prize_bg_m">
+                                            <img src="./images/mobile/roadmap_p1_mobile.png" class="prize_bg1" alt="Phase 1"/>
+                                            <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_prize_150k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/money/milestone"/>
+                                        </div>
+                                        <span></span>
+                                        <!-- <div class="lock"></div> -->
+                                    </li>
+                                    <li id="prize_p2">
+                                        <div class="prize_bg prize_bg_pc">
+                                            <img src="./images/roadmap/roadmap_p2.png" class="prize_bg1" alt="Phase 2"/>
+                                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_prize_200k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/discosureprivilege/milestone"/>
+                                        </div>
+                                        <div class="prize_bg prize_bg_m">
+                                            <img src="./images/mobile/roadmap_p2_mobile.png" class="prize_bg1" alt="Phase 2"/>
+                                            <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_prize_200k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/discosureprivilege/milestone"/>
+                                        </div>
+                                        <span></span>
+                                        <!-- <div class="lock"></div> -->
+                                    </li>
+                                    <li id="prize_p3">
+                                        <div class="prize_bg prize_bg_pc">
+                                            <img src="./images/roadmap/roadmap_p3.png" class="prize_bg1" alt="Phase 3"/>
+                                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_prize_300k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/discosureprivilege/exclusive"/>
+                                        </div>
+                                        <div class="prize_bg prize_bg_m">
+                                            <img src="./images/mobile/roadmap_p3_mobile.png" class="prize_bg1" alt="Phase 3"/>
+                                            <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_prize_300k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/discosureprivilege/exclusive"/>
+                                        </div>
+                                        <span></span>
+                                        <!-- <div class="lock"></div> -->
+                                    </li>
+                                    <li id="prize_p4">
+                                        <div class="prize_bg prize_bg_pc">
+                                            <img src="./images/roadmap/roadmap_p4.png" class="prize_bg1" alt="Phase 4"/>
+                                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_prize_600k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/imprssionarms/discosureprivilege"/>
+                                        </div>
+                                        <div class="prize_bg prize_bg_m">
+                                            <img src="./images/mobile/roadmap_p4_mobile.png" class="prize_bg1" alt="Phase 4"/>
+                                            <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_prize_600k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/imprssionarms/discosureprivilege"/>
+                                        </div>
+                                        <span></span>
+                                        <!-- <div class="lock"></div> -->
+                                    </li>
+                                    <li id="prize_p5">
+                                        <div class="prize_bg prize_bg_pc">
+                                            <img src="./images/roadmap/roadmap_p5.png" class="prize_bg1" alt="Phase 5"/>
+                                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_prize_1000k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/SR/SSR"/>
+                                        </div>
+                                        <div class="prize_bg prize_bg_m">
+                                            <img src="./images/mobile/roadmap_p5_mobile.png" class="prize_bg1" alt="Phase 5"/>
+                                            <img src="https://opmw.perfectworld.com/en/m/images/index231227/onepunchmanworld_prize_1000k_active.png" class="prize_bg2" alt="onepunchmanworld/prize/reward/coins/intel/SR/SSR"/>
+                                        </div>
+                                        <span></span>
+                                        <!-- <div class="lock"></div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="select_button_wrap btn_yy1_pc">
+                                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_pre_register_button_milestone.png" class="select_button1 btn_login_click btn_yy btn_yy2 publicGoogleAnalytics" type="preregisterClick_P2_default_click" alt="onepunchmanworld/milestone/games/color/join/heros/bonus"/>
+                                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_Bind_milestone.png" class="select_button2 btn_bindphone btn_yy btn_yy2 publicGoogleAnalytics" type="preregisterClick_P2_default_click" alt="onepunchmanworld/preregister/bindphone/preregistration/date/bind/phonenumber"/>
+                                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_registercomplete_milestone.png" class="select_button3 btn_yy btn_yy2" alt="onepunchmanworld/completed/preregister/button/preregistration/UI/event"/>
+                            </div>
+                            <img src="https://opmw.perfectworld.com/en/images/index231227/onepunchmanworld_pre_register_button_milestone.png" class="btn_login_click btn_yy btn_yy2 btn_yy1_m publicGoogleAnalytics" type="preregisterClick_P2_default_click" alt="onepunchmanworld/milestone/games/color/join/heros/bonus"/> -->
+                            <!--<a class="link_store publicGoogleAnalytics" type="_default_click" href="#" target="_blank"></a>-->
+                        </div>
+                    </div>
+
+                    
+
+
+                    <!--news-->
+                    <div class="swiper-slide section_news" id="howtobuySection">
+                        <div class="section_t_news"></div>
+                            <div class="news_wrap">
+                                <div class="news_title">
+                                <div class="longjuan"></div>
+                                <div class="news_pic_box">
+                                    <div class="swiper news_swiper">
+                                        <div class="swiper-wrapper" id="lunboDiv">
+                                            <div class="swiper-slide">
+                                                <!-- <img src="https://opmw.perfectworld.com/resources/jpg/230919/11351695110427594.jpg" alt="OnePunchManWorld"/> -->
+                                                <div class="html-embed w-embed w-iframe">
+                                                    <iframe src="https://jupiter-terminal.dexscreener.com/?inputMint=BpD8kZ2DdKpUej5LFhC2TRDGB2cG9wPgDyF4VN4SabBz&outputMint=So11111111111111111111111111111111111111112" height="600px" width="100%" style="
+                                                            border: 0;
+                                                            margin: 0 auto;
+                                                            margin-bottom: .5rem;
+                                                            display: block;
+                                                            border-radius: 10px;
+                                                            max-width: 960px;
+                                                            min-width: 300px;
+                                                            float: right;
+                                                        "></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="news_page"></div> -->
+                                </div>
+
+                                <div class="news_box">
+                                    <!-- <ul class="news_tab">
+                                        <li class="margin0 on publicGoogleAnalytics" type="Latest_default_click">LATEST</li>
+                                        <li class="publicGoogleAnalytics" type="News_default_click">NEWS</li>
+                                        <li class="publicGoogleAnalytics" type="Notice_default_click">NOTICE</li>
+                                        <li class="publicGoogleAnalytics" type="Events_default_click">EVENTS</li>
+                                    </ul> -->
+                                    <div class="news_list_cont" style="display:block">
+                                        
+                                        
+                                        <ul>
+                                            <li>
+                                                <span class="news_item_line"></span>
+
+                                                <div class="news_item_cont">
+                                                    <!-- <span class="news_tag">NEWS</span> -->
+                                                    <div class="news_m">                                  
+                                                            <span class="buy_title">1. Get Phantom Wallet</span>
+                                                            <br>
+                                                            Download the Metamask browser extension or get the mobile app through your Appstore. Metamask will be used to buy $SOLTAMA on the Solana network.
+                                                    </div>
+                                                    <!-- <span class="news_time">18/01/2024</span> -->
+                                                </div>                                       
+                                            </li>
+
+
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <!-- <span class="news_tag">NEWS</span> -->
+                                                    <div class="news_m">         
+                                                        <span class="buy_title">2. Buy SOL</span>
+                                                            <br>
+                                                            SOL is the native token of the SOLANA network and requiered to buy $SOLTAMA. You can buy SOL with your credit-card in the Phantom app.     
+                                                    </div>
+                                                    <!-- <span class="news_time">18/10/2023</span> -->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <!-- <span class="news_tag">NEWS</span> -->
+                                                    <div class="news_m">
+            
+                                                        <span class="buy_title">3. Swap SOL for $SOLTAMA</span>
+                                                            <br>
+                                                            Visit raydium.io or jup.ag and connect your wallet on the top right corner. Add the contract address of $SOLTAMA at the second field. Now chose the amount you want to buy and click on Swap.
+
+                                                    </div>
+                                                    <!-- <span class="news_time">20/09/2023</span> -->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <!-- <span class="news_tag">NEWS</span> -->
+                                                    <div class="news_m">
+
+                                                        <span class="buy_title">4. That's it!</span>
+                                                            <br>
+                                                            You have successfully invested in $SOLTAMA and are eligible to use its ecosystem. Make sure you follow $SOLTAMA on Twitter and join the Telegram community to stay up to date.
+                                                            
+    
+                                                    </div>
+                                                    <!-- <span class="news_time">19/09/2023</span> -->
+                                                </div>
+                                            </li> 
+                                        </ul>
+
+
+                                    </div>   
+                                        <!-- <a class="news_more publicGoogleAnalytics" type="More_default_click" href="https://opmw.perfectworld.com/en/article/news/index.html" target="_blank">+ MORE</a>
+                                    
+                                    <div class="news_list_cont">
+                                        <ul>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <span class="news_tag">NEWS</span>
+                                                    <div class="news_m">
+                                                        <a href="/en/article/news/news/20240118/248344.html" target="_blank">"One Punch Man: World" will be official release on February 1st!</a>
+                                                    </div> -->
+                                                    <!-- <span class="news_time">18/01/2024</span> -->
+                                                <!-- </div>
+                                            </li>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <span class="news_tag">NEWS</span>
+                                                    <div class="news_m">
+                                                        <a href="/en/article/news/news/20231017/246530.html" target="_blank">One Punch Man: World - Series Test Game Rewards</a>
+                                                    </div>
+                                                    <span class="news_time">18/10/2023</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <span class="news_tag">NEWS</span>
+                                                    <div class="news_m">
+                                                        <a href="/en/article/news/news/20230920/245988.html" target="_blank">Closed Beta Test begins on October 18th, fill out survey to sign up!</a>
+                                                    </div>
+                                                    <span class="news_time">20/09/2023</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="news_item_line"></span>
+                                                <div class="news_item_cont">
+                                                    <span class="news_tag">NEWS</span>
+                                                    <div class="news_m">
+                                                        <a href="/en/article/news/news/20230919/245981.html" target="_blank">One Punch Man: World is Coming Soon To The SEA Region, managed by Perfect World Games!</a>
+                                                    </div>
+                                                    <span class="news_time">19/09/2023</span>
+                                                </div> -->
+                                            <!-- </li> -->
+                                        <!-- </ul>
+                                        <a class="news_more publicGoogleAnalytics" type="More_default_click" href="https://opmw.perfectworld.com/en/article/news/news/index.html" target="_blank">+ MORE</a>
+                                    </div>
+                                    <div class="news_list_cont">
+                                        <ul></ul>
+                                        <a class="news_more publicGoogleAnalytics" type="More_default_click" href="https://opmw.perfectworld.com/en/article/news/notice/index.html" target="_blank">+ MORE</a>
+                                    </div>
+                                    <div class="news_list_cont">
+                                        <ul></ul>
+                                        <a class="news_more publicGoogleAnalytics" type="More_default_click" href="https://opmw.perfectworld.com/en/article/news/events/index.html" target="_blank">+ MORE</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="gofirst publicGoogleAnalytics" type="Upclick_default_click"></span>
+            <div id="foot_wrap"></div>
+        </div>
+
+
+
+
+
+        
+        <!--pop_video-->
+        <div class="pop_fixed" id="pop_video">
+            <div class="pop_video_cont">
+                <div class="zs_video"></div>
+                <span class="icon_close close_video publicGoogleAnalytics" type="videooff_default_click"></span>
+                <div class="pop_v_box">
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+        <!--pop_bind_phone-->
+        <div class="pop_fixed" id="pop_bind_phone">
+            <div class="pop_msg_cont">
+                <span class="icon_close"></span>
+                <div class="pop_line_title">PLEASE BIND YOUR PHONE NUMBER</div>
+                <div class="form_line">
+                    <div class="phone_line_bg">
+                        <select class="area_code_select" id="bind_area"></select>
+                        <input class="phone_bind" type="text" maxlength="13"/>
+                    </div>
+                </div>
+                <div class="form_line">
+                    <input class="inp_code" id="bind_captchaCode" type="text"/>
+                    <div class="img_code_box">
+                        <img id="getCaptchaCodeBind" src=""/>
+                    </div>
+                </div>
+                <div class="form_line">
+                    <input class="inp_code" id="code_bind" type="text"/>
+                    <span class="btn_send" id="getBindCode">Verification Code</span>
+                </div>
+                <span class="btn_ok" id="btn_sub_bind">
+                    <span>OK</span>
+                    <span class="icon_jiantou"></span>
+                </span>
+            </div>
+        </div>
+        <!--pop_yy_succ-->
+        <div class="pop_fixed" id="pop_yy_succ">
+            <div class="pop_msg_cont">
+                <span class="icon_close"></span>
+                <div class="msg_line_bg">
+                    <div class="succ_ok">
+                        <div class="bind_phone_button">
+                            <a class="btn_bindphone">
+                                <img src="https://opmw.perfectworld.com/en/images/index240115/onepunchmanworld_Bindwindows.png" alt="onepunchmanworld/bindphonenumber/register/step/QA/bind/phonenumber">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="link_view_more" href="https://www.facebook.com/OPMWSEA" target="_blank"></a> -->
+            </div>
+        </div>
+        <!--pop_yy_done-->
+        <div class="pop_fixed" id="pop_yy_done">
+            <div class="pop_msg_cont">
+                <span class="icon_close"></span>
+                <div class="msg_line_bg">
+                    <p class="succ_text">You have already pre-registered.</p>
+                </div>
+            </div>
+        </div>
+        <!--pop_qidai-->
+        <div class="pop_fixed" id="pop_qidai">
+            <div class="pop_msg_cont">
+                <span class="icon_close"></span>
+                <div class="msg_line_bg">
+                    <p class="succ_text">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jq_321.js"></script>
+        <script type="text/javascript" src="./js/stat.js"></script>
+        <script type="text/javascript" src="./js/top.js" id="toplanguage" lau="en"></script>
+        <script type="text/javascript" src="./js/swiper-4.5.0.min.js"></script>
+        <script type="text/javascript" src="./js/swiper.animate1.0.2.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="./js/footer231201.js" id="footid" instid="foot_wrap"></script>
+        <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+        <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="./js/uuidv4.min.js"></script>
+        <script type="text/javascript" src="./js/jwt-decode.min.js"></script>
+        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+        <script type="text/javascript" src="./js/utils.js"></script>
+        <script type="text/javascript" src="./js/thirdlogin.js"></script>
+        <script type="text/javascript" src="./js/LoginTemplateEn.js"></script>
+        <script type="text/javascript" src="./js/index231227.js"></script>
+        <script type="text/javascript" src="./js/yy240118.js"></script>
+        <script type="text/javascript" src="./js/phoneLogin.js"></script>
+        <script type="text/javascript" src="./js/phoneBind.js"></script>
+        <script type="text/javascript" src="./js/emailLogin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <!-- Include a script for smooth scrolling -->
+        <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+            });
+        });
+        </script>
+        <script>
+            function copyText(text) {
+                // Create a temporary textarea element
+                var textarea = document.createElement("textarea");
+                
+                // Set the value of the textarea to the specified text
+                textarea.value = text;
+                
+                // Append the textarea to the document
+                document.body.appendChild(textarea);
+                
+                // Select the text inside the textarea
+                textarea.select();
+                
+                // Copy the selected text to the clipboard
+                document.execCommand('copy');
+                
+                // Remove the temporary textarea
+                document.body.removeChild(textarea);
+                
+                // Optionally, provide user feedback (you can modify this part)
+                // alert("Text has been copied: " + text);
+            }
+        
+            function glowEffect(element) {
+                // Add the 'glow' class to the element for the glowing effect
+                element.classList.add('glow');
+        
+                // Set a timeout to remove the 'glow' class after a short delay
+                setTimeout(function() {
+                    element.classList.remove('glow');
+                }, 500); // Adjust the duration (in milliseconds) as needed
+            }
+
+            function toggleGlow(element, action) {
+                if (action === 'over') {
+                    element.style.filter = 'brightness(150%)';
+                } else if (action === 'out') {
+                    element.style.filter = 'brightness(100%)';
+                }
+            }
+        
+        </script>
+
+    </body>
+</html>

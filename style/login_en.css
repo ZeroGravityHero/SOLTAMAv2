@@ -1,0 +1,673 @@
+@charset "utf-8";
+@font-face {
+    font-family: "MyWebFont";
+    src: url("https://opmw.perfectworld.com/public/font/DINPro-Bold.otf") format("truetype");
+}
+.pop_fixed {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    overflow: hidden;
+}
+@media screen and (min-width: 751px) {
+    .pop_login_cont {
+        position: absolute;
+        width: 8.47rem;
+        height: 7.54rem;
+        left: 50%;
+        top: 50%;
+        margin: -3.77rem 0 0 -4.23rem;
+        background: url(https://opmw.perfectworld.com/public/images/login/pop_login_bg.png);
+        background-size: 100% auto;
+        font-family: "MyWebFont";
+    }
+    .icon_close {
+        position: absolute;
+        width: 0.51rem;
+        height: 0.51rem;
+        right: 0.17rem;
+        top: 0.08rem;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_close.png);
+        background-size: 100% auto;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .login_tab_box {
+        width: 7.3rem;
+        height: 0.62rem;
+        margin: 1.07rem auto 0;
+        border-bottom: 0.01rem solid #a6a6ab;
+    }
+    .login_tab {
+        position: relative;
+        width: 5.94rem;
+        height: 0.62rem;
+        margin: 0 auto;
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_bg.png);
+        background-size: 100% auto;
+    }
+    .login_tab span {
+        position: absolute;
+        width: 2.98rem;
+        height: 0.62rem;
+        top: 0;
+        font-size: 0.4rem;
+        line-height: 0.62rem;
+        font-weight: bold;
+        color: #d1d1d4;
+        text-align: center;
+        cursor: pointer;
+    }
+    .login_tab span.on {
+        cursor: default;
+        color: #353438;
+    }
+    .login_tab_phone {
+        left: 0;
+    }
+    .login_tab_phone.on {
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_l_on.png);
+        background-size: 100% auto;
+    }
+    .login_tab_email {
+        right: 0;
+    }
+    .login_tab_email.on {
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_r_on.png);
+        background-size: 100% auto;
+    }
+
+    .login_type_cont {
+        display: none;
+        width: 100%;
+    }
+    #login_type_phone {
+        display: block;
+    }
+    .form_line {
+        width: 5.98rem;
+        height: 0.68rem;
+        margin: 0.2rem auto 0;
+    }
+    .phone_line_bg {
+        width: 100%;
+        height: 100%;
+        background: #8d8d91;
+    }
+    .area_code_select {
+        float: left;
+        width: 1.66rem;
+        height: 0.42rem;
+        margin: 0.12rem 0 0 0.02rem;
+        font-size: 0.22rem;
+        color: #e4e5eb;
+        text-align: center;
+        background: #8d8d91;
+        border: 0;
+        border-right: 0.01rem solid #878688;
+        outline: 0;
+        -webkit-appearance: none;
+    }
+    .phone,
+    .phone_bind {
+        float: right;
+        width: 4.2rem;
+        height: 0.68rem;
+        font-size: 0.22rem;
+        line-height: 0.68rem;
+        color: #e4e5eb;
+        text-align: center;
+        background: none;
+        border: 0;
+        outline: 0;
+    }
+    #phone_email {
+        display: none;
+    }
+    .email,
+    .inp_code {
+        width: 100%;
+        height: 100%;
+        font-size: 0.22rem;
+        color: #e4e5eb;
+        text-align: center;
+        background: #8d8d91;
+        border: 0;
+        outline: 0;
+    }
+    .inp_code {
+        float: left;
+        width: 3.48rem;
+    }
+    .img_code_box {
+        position: relative;
+        float: right;
+        width: 2.36rem;
+        height: 0.68rem;
+    }
+    .btn_send {
+        float: right;
+        width: 2.36rem;
+        height: 0.68rem;
+        font-size: 0.2rem;
+        line-height: 0.68rem;
+        color: #1b1b1b;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_send_bg.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .img_code_box img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .xieyi_box {
+        position: relative;
+        width: 5.98rem;
+        height: 0.24rem;
+        padding-left: 0.4rem;
+        box-sizing: border-box;
+        margin: 0.2rem 0 0 1.24rem;
+        font-size: 0.2rem;
+        line-height: 0.24rem;
+        color: #59585b;
+    }
+    .xieyi_box a {
+        color: #59585b;
+    }
+    .icon_check {
+        position: absolute;
+        width: 0.31rem;
+        height: 0.24rem;
+        left: 0;
+        top: 0;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_checked.png) 0 0 no-repeat;
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .icon_check.on {
+        background-position: 0 -0.24rem;
+    }
+    .btn_sub_login {
+        display: block;
+        width: 5.95rem;
+        height: 0.87rem;
+        padding-top: 0.02rem;
+        box-sizing: border-box;
+        margin: 0.3rem auto 0;
+        font-size: 0.42rem;
+        font-weight: bold;
+        color: #0e0e0e;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_sub_login_bg.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .btn_sub_login .icon_jiantou {
+        display: inline-block;
+        width: 0.44rem;
+        height: 0.44rem;
+        margin-left: 0.15rem;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_jiantou.png);
+        background-size: 100% auto;
+    }
+    .btn_sub_login span {
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .other_log_box {
+        display: flex;
+        width: 100%;
+        height: 0.8rem;
+        margin-top: 0.4rem;
+        justify-content: center;
+    }
+    .other_log_box span {
+        display: block;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0 0.28rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .btn_login_google {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_google.png);
+        background-size: 100% auto;
+    }
+    .btn_login_apple {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_apple.png);
+        background-size: 100% auto;
+    }
+    .btn_login_apple div {
+        opacity: 0;
+    }
+    .btn_login_fb {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_fb.png);
+        background-size: 100% auto;
+    }
+    .btn_login_huawei {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_huawei.png);
+        background-size: 100% auto;
+    }
+
+    #pop_msg {
+        z-index: 101;
+    }
+    .pop_msg_cont {
+        position: absolute;
+        width: 8.47rem;
+        height: 7rem;
+        left: 50%;
+        top: 50%;
+        margin: -3.5rem 0 0 -4.23rem;
+        background: url(https://opmw.perfectworld.com/public/images/login/pop_msg_bg.png);
+        background-size: 100% auto;
+        font-family: "MyWebFont";
+    }
+    .msg_line_bg {
+        width: 8.14rem;
+        height: 4.3rem;
+        margin: 1.48rem auto 0;
+        background: url(https://opmw.perfectworld.com/public/images/login/msg_line.png) center center no-repeat;
+        background-size: 100% auto;
+    }
+    #msg {
+        display: flex;
+        width: 5.5rem;
+        height: 4.3rem;
+        margin: 0 auto;
+        font-size: 0.54rem;
+        font-weight: bold;
+        line-height: 0.68rem;
+        color: #353438;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #msg span {
+        display: block;
+        width: 100%;
+    }
+    #msg p {
+        font-size: 0.4rem;
+        font-weight: normal;
+        line-height: 0.46rem;
+    }
+
+    .pop_line_title {
+        position: relative;
+        height: 0.88rem;
+        margin: 0.9rem 0 0.6rem;
+        font-size: 0.41rem;
+        line-height: 0.88rem;
+        font-weight: bold;
+        color: #353438;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/line.png) center bottom no-repeat;
+        background-size: 100% auto;
+    }
+    .btn_ok {
+        display: block;
+        width: 4.75rem;
+        height: 0.89rem;
+        margin: 0.7rem auto 0;
+        padding-top: 0.05rem;
+        box-sizing: border-box;
+        margin: 0.4rem auto 0;
+        font-size: 0.42rem;
+        font-weight: bold;
+        color: #0e0e0e;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_ok_bg.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .btn_ok .icon_jiantou {
+        display: inline-block;
+        width: 0.44rem;
+        height: 0.44rem;
+        margin-left: 0.15rem;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_jiantou.png);
+        background-size: 100% auto;
+    }
+    .btn_ok span {
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 750px) {
+    .pop_login_cont {
+        position: absolute;
+        width: 712px;
+        height: 634px;
+        left: 50%;
+        top: 50%;
+        margin: -317px 0 0 -356px;
+        background: url(https://opmw.perfectworld.com/public/images/login/pop_login_bg.png);
+        background-size: 100% auto;
+    }
+    .icon_close {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        right: 15px;
+        top: 6px;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_close.png);
+        background-size: 100% auto;
+        z-index: 2;
+    }
+    .login_tab_box {
+        width: 612px;
+        height: 54px;
+        margin: 89px auto 0;
+        border-bottom: 1px solid #a6a6ab;
+    }
+    .login_tab {
+        position: relative;
+        width: 517px;
+        height: 54px;
+        margin: 0 auto;
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_bg.png);
+        background-size: 100% auto;
+    }
+    .login_tab span {
+        position: absolute;
+        width: 260px;
+        height: 54px;
+        top: 0;
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 54px;
+        color: #d1d1d4;
+        text-align: center;
+    }
+    .login_tab span.on {
+        cursor: default;
+        color: #353438;
+    }
+    .login_tab_phone {
+        left: 0;
+    }
+    .login_tab_phone.on {
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_l_on.png);
+        background-size: 100% auto;
+    }
+    .login_tab_email {
+        right: 0;
+    }
+    .login_tab_email.on {
+        background: url(https://opmw.perfectworld.com/public/images/login/login_tab_r_on.png);
+        background-size: 100% auto;
+    }
+
+    .login_type_cont {
+        display: none;
+        width: 100%;
+    }
+    #login_type_phone {
+        display: block;
+    }
+    .form_line {
+        width: 504px;
+        height: 58px;
+        margin: 20px auto 0;
+    }
+    .phone_line_bg {
+        width: 100%;
+        height: 100%;
+        background: #8d8d91;
+    }
+    .area_code_select {
+        float: left;
+        width: 130px;
+        height: 36px;
+        margin: 11px 0 0 10px;
+        font-size: 22px;
+        color: #e4e5eb;
+        text-align: center;
+        background: #8d8d91;
+        border: 0;
+        border-right: 1px solid #878688;
+        outline: 0;
+    }
+    .phone,
+    .phone_bind {
+        float: right;
+        width: 355;
+        height: 58px;
+        font-size: 22px;
+        line-height: 58px;
+        color: #e4e5eb;
+        text-align: center;
+        background: none;
+        border: 0;
+        outline: 0;
+    }
+    #phone_email {
+        display: none;
+    }
+    .email,
+    .inp_code {
+        width: 100%;
+        height: 100%;
+        font-size: 22px;
+        color: #e4e5eb;
+        text-align: center;
+        background: #8d8d91;
+        border: 0;
+        outline: 0;
+    }
+    .inp_code {
+        float: left;
+        width: 294px;
+    }
+    .img_code_box {
+        position: relative;
+        float: right;
+        width: 201px;
+        height: 58px;
+    }
+    .btn_send {
+        float: right;
+        width: 201px;
+        height: 58px;
+        font-size: 18px;
+        line-height: 58px;
+        color: #1b1b1b;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_send_bg.png);
+        background-size: 100% auto;
+    }
+    .img_code_box img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .xieyi_box {
+        position: relative;
+        width: 520px;
+        height: 24px;
+        max-height: 48px;
+        padding-left: 32px;
+        box-sizing: border-box;
+        margin: 20px 0 0 102px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #59585b;
+    }
+    .xieyi_box a {
+        color: #59585b;
+    }
+    .icon_check {
+        position: absolute;
+        width: 31px;
+        height: 24px;
+        left: 0;
+        top: 0;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_checked.png) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+    .icon_check.on {
+        background-position: 0 -24px;
+    }
+
+    .btn_sub_login {
+        display: block;
+        width: 501px;
+        height: 73px;
+        padding-top: 2px;
+        box-sizing: border-box;
+        margin: 25px auto 0;
+        font-size: 36px;
+        font-weight: bold;
+        color: #0e0e0e;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_sub_login_bg.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .btn_sub_login .icon_jiantou {
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_jiantou.png);
+        background-size: 100% auto;
+    }
+    .btn_sub_login span {
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .other_log_box {
+        display: flex;
+        width: 100%;
+        height: 69px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .other_log_box span {
+        display: block;
+        width: 69px;
+        height: 69px;
+        margin: 0 23px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .btn_login_google {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_google.png);
+        background-size: 100% auto;
+    }
+    .btn_login_apple {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_apple.png);
+        background-size: 100% auto;
+    }
+    .btn_login_apple div {
+        opacity: 0;
+    }
+    .btn_login_fb {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_fb.png);
+        background-size: 100% auto;
+    }
+    .btn_login_huawei {
+        background: url(https://opmw.perfectworld.com/public/images/login/log_icon_huawei.png);
+        background-size: 100% auto;
+    }
+
+    #pop_msg {
+        z-index: 101;
+    }
+    .pop_msg_cont {
+        position: absolute;
+        width: 712px;
+        height: 588px;
+        left: 50%;
+        top: 50%;
+        margin: -294px 0 0 -356px;
+        background: url(https://opmw.perfectworld.com/public/images/login/pop_msg_bg.png);
+        background-size: 100% auto;
+    }
+    .msg_line_bg {
+        width: 684px;
+        height: 314px;
+        margin: 148px auto 0;
+        background: url(https://opmw.perfectworld.com/public/images/login/msg_line_h5.png) center center no-repeat;
+    }
+    #msg {
+        display: flex;
+        width: 466px;
+        height: 314px;
+        margin: 0 auto;
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 60px;
+        color: #353438;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #msg span {
+        display: block;
+        width: 100%;
+    }
+    #msg p {
+        font-size: 34px;
+        font-weight: normal;
+        line-height: 40px;
+    }
+
+    .pop_line_title {
+        position: relative;
+        height: 70px;
+        margin: 78px 0 40px;
+        font-size: 34px;
+        line-height: 70px;
+        font-weight: bold;
+        color: #353438;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/line.png) center bottom no-repeat;
+    }
+    .btn_ok {
+        display: block;
+        width: 400px;
+        height: 75px;
+        margin: 50px auto 0;
+        padding-top: 2px;
+        box-sizing: border-box;
+        font-size: 36px;
+        font-weight: bold;
+        color: #0e0e0e;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/public/images/login/btn_ok_bg.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .btn_ok .icon_jiantou {
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+        background: url(https://opmw.perfectworld.com/public/images/login/icon_jiantou.png);
+        background-size: 100% auto;
+    }
+    .btn_ok span {
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}

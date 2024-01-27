@@ -1,0 +1,2181 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+    height:200vh;
+}
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+textarea,
+table,
+td {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+area {
+    outline: none;
+}
+img {
+    border: 0;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+span {
+    outline: none;
+}
+.pop_fixed {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    overflow: hidden;
+}
+@media screen and (min-width: 751px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .wrap {
+        position: relative;
+        width: 25.6rem;
+        height: 100%;
+        overflow: hidden;
+    }
+    .logo {
+        display: none;
+    }
+    /* sns_bar */
+    .sns_box {
+        position: fixed;
+        width: 0.47rem;
+        height: 3.6rem;
+        right: 0.4rem;
+        z-index: 10;
+        top: 2.56rem;
+    }
+    .sns_box a {
+        display: block;
+        margin: 0 auto 0.28rem;
+    }
+    .sns_jup {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(../images/home/sns_jup.png);
+        background-size: 100% auto;
+    }
+    .sns_ds {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(../images/home/sns_ds.png);
+        background-size: 100% auto;
+    }
+    .sns_tg {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(../images/home/sns_tg.png);
+        background-size: 100% auto;
+    }
+    .sns_x {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(../images/home/sns_x.png);
+        background-size: 100% auto;
+    }
+    /* .sns_fb {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/sns_fb.png);
+        background-size: 100% auto;
+    }
+    .sns_dis {
+        width: 0.47rem;
+        height: 0.47rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/sns_dis.png);
+        background-size: 100% auto;
+    }
+    .sns_ytb {
+        width: 0.46rem;
+        height: 0.34rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/sns_ytb.png);
+        background-size: 100% auto;
+    }
+    .sns_ins {
+        width: 0.46rem;
+        height: 0.46rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/sns_ins.png);
+        background-size: 100% auto;
+    }
+    .sns_line {
+        width: 0.45rem;
+        height: 0.44rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/sns_line.png);
+        background-size: 100% auto;
+    } */
+    #copy_text {
+        position: fixed;
+        width: 6.8rem;
+        height: 0.2rem;
+        left: 0.5rem;
+        bottom: 0.3rem;
+        font-size: 0.18rem;
+        font-family: SimHei;
+        color: #fff;
+        z-index: 10;
+    }
+
+    .icon_down {
+        position: absolute;
+        width: 0.68rem;
+        height: 0.35rem;
+        left: 50%;
+        margin-left: -0.34rem;
+        bottom: 0.2rem;
+        background: url(../images/mobile/icon_down.png);
+        background-size: 100% auto;
+        z-index: 9;
+        animation: key_downup 0.5s infinite alternate;
+        -webkit-animation: key_downup 0.5s infinite alternate;
+        -ms-animation: key_downup 0.5s infinite alternate;
+    }
+    @keyframes key_downup {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0.2rem, 0);
+        }
+    }
+    @-webkit-keyframes key_downup {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0.2rem, 0);
+        }
+    }
+    @-ms-keyframes key_downup {
+        0% {
+            -ms-transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -ms-transform: translate3d(0, 0.2rem, 0);
+        }
+    }
+    .storeBtns {
+        position: absolute;
+        bottom: 1.04rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        z-index: 2;
+    }
+    .storeBtns a {
+        width: 2.66rem;
+        height: 0.8rem;
+        margin: 0 0.27rem;
+    }
+    .storeBtns a img {
+        display: block;
+        width: 2.66rem;
+        height: 0.8rem;
+    }
+    .appStore {
+        background: url(../images/home/jupiterExchange.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .googleStore {
+        background: url(../images/home/telegram.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .huaweiStore {
+        background: url(../images/home/X.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .dexScreener {
+        background: url(../images/home/dexScreener.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+
+    .btn_event {
+        position: absolute;
+        width: 2.46rem;
+        height: 0.83rem;
+        right: 0;
+        top: 50%;
+        margin-top: -0.41rem;
+        z-index: 10;
+    }
+    .btn_event img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    /* page */
+    .page_swiper {
+        width: 100%;
+        height: 100%;
+    }
+    /* head */
+    .section_head {
+        position: relative;
+        width: 25.6rem;
+        height: 100%;
+        background: url(../images/home/head_bg.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    #bg_video {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+    .slogan {
+        position: absolute;
+        width: 2.8rem;
+        height: 2.8rem;
+        left: 62.5%;
+        margin-left: -4.63rem;
+        top: 1.3rem;
+        z-index: 5;
+    }
+    .btn_wrap1 {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 0.9rem;
+        left: 0;
+        top: 4.3rem;
+        justify-content: center;
+        z-index: 5;
+    }
+    .btn_head_v {
+        display: block;
+        width: 2.15rem;
+        height: 0.9rem;
+        margin: 0 0.1rem;
+        background: url(../images/home/btn_video.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .btn_yy {
+        display: block;
+        width: 6.02rem;
+        height: 0.9rem;
+        margin: 0 0.1rem;
+        cursor: pointer;
+    }
+    
+    .btn_yy1_m {
+        display: none;
+    }
+    .select_button2 {
+        display: none;
+    }
+    .select_button3 {
+        display: none;
+    }
+
+    .selectLag {
+        width: 0.49rem;
+        height: 0.51rem;
+        position: absolute;
+        right: 0.4rem;
+        top: 1.8rem;
+        /* background: url(https://opmw.perfectworld.com/en/images/index2306/select.png) no-repeat 0 0; */
+        background-size: 0.98rem auto;
+        z-index: 11;
+        cursor: pointer;
+    }
+    .selectLag:hover {
+        background-position: -0.49rem 0;
+    }
+    .selectLag:hover .selectlist {
+        display: block;
+    }
+    .selectlist {
+        width: 0.49rem;
+        position: absolute;
+        left: 0;
+        top: 0.51rem;
+        background: rgba(43, 43, 43, 0.75);
+        display: none;
+    }
+    .selectlist a,
+    .selectlist span {
+        display: block;
+        width: 0.49rem;
+        height: 0.23rem;
+        line-height: 0.23rem;
+        text-align: center;
+        font-size: 0.15rem;
+        color: #fff;
+        background: url(../images/mobile/selectMenu.png) no-repeat -9999rem 0;
+        background-size: 100% auto;
+    }
+    .selectlist .on,
+    .selectlist a:hover {
+        background-position: 0 0;
+        color: #2c2d2f;
+    }
+
+
+
+
+    /* lcb */
+    .section_lcb {
+        position: relative;
+        width: 25.6rem;
+        height: 100%;
+        background: url(../images/roadmap/roadmap_bg.jpg) center center no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .section_t_lcb {
+        position: absolute;
+        width: 2.94rem;
+        height: 0.94rem;
+        left: 0.57rem;
+        top: 1.2rem;
+        /* background: url(https://opmw.perfectworld.com/en/images/index231123/section_t_lcb.png); */
+        background-size: 100% auto;
+        z-index: 5;
+    }
+    .lcb_wrap {
+        position: absolute;
+        width: 22.22rem;
+        height: 10.53rem;
+        left: 50%;
+        top: 52%;
+        transform: translate(-50%, -50%);
+    }
+    .lcb_slogan {
+        width: 13.32rem;
+        height: 1.61rem;
+        margin: 0 auto;
+        background: url(../images/roadmap/roadmap_slogan.png);
+        background-size: 100% auto;
+    }
+    .lcb_cont {
+        position: relative;
+        width: 100%;
+        height: 6.17rem;
+        margin-top: 0.82rem;
+    }
+    .lcb_num {
+        width: 20.16rem;
+        height: 0.55rem;
+        margin-left: 1.01rem;
+        background: url(../images/roadmap/roadmap_num.png);
+        background-size: 100% auto;
+    }
+    .progress_line {
+        width: 21.73rem;
+        height: 0.11rem;
+        margin: 0.25rem 0 0 0.22rem;
+        background-color: #000;
+        border-radius: 0.04rem;
+        overflow: hidden;
+    }
+    #process_w {
+        width: 0;
+        height: 100%;
+        background: #fff;
+        background: linear-gradient(#fff, #9da2c1);
+        border-radius: 0.04rem;
+    }
+    .lcb_gift {
+        position: absolute;
+        width: 100%;
+        height: 4.83rem;
+        left: 0;
+        top: 1.1rem;
+    }
+    .lcb_gift li {
+        position: absolute;
+        width: 3.93rem;
+        height: 100%;
+        top: 0;
+    }
+    .prize_bg_m {
+        display: none;
+    }
+    #prize_p1 {
+        left: 0rem;
+    }
+    #prize_p2 {
+        left: 4.23rem;
+    }
+    #prize_p3 {
+        left: 8.42rem;
+    }
+    #prize_p4 {
+        left: 12.65rem;
+        width: 5.31rem;
+    }
+    #prize_p5 {
+        left: 18.29rem;
+    }
+    .lcb_gift li span {
+        position: absolute;
+        width: 0.38rem;
+        height: 0.37rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -0.44rem;
+        background: url(https://opmw.perfectworld.com/en/images/index231227/icon_point.png);
+        background-size: 100% auto;
+    }
+    .lcb_gift li.on span {
+        background: url(https://opmw.perfectworld.com/en/images/index231227/icon_point_on.png);
+        background-size: 100% auto;
+    }
+    .lcb_gift li .lock {
+        position: absolute;
+        width: 0.38rem;
+        height: 0.37rem;
+        right: -0.19rem;
+        top: 0;
+        background: url(https://opmw.perfectworld.com/en/images/index231123/icon_suo.png);
+        background-size: 100% auto;
+    }
+    .lcb_gift li.on .lock {
+        display: none;
+    }
+    .lcb_gift li .prize_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .lcb_gift li .prize_bg img {
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
+    .lcb_gift li .prize_bg1 {
+        display: block;
+    }
+    .lcb_gift li .prize_bg2 {
+        display: none;
+    }
+    .lcb_gift li.on .prize_bg1 {
+        display: none;
+    }
+    .lcb_gift li.on .prize_bg2 {
+        display: block;
+    }
+    .link_store {
+        display: block;
+        width: 6.02rem;
+        height: 0.9rem;
+        margin: 0.9rem auto 0;
+        background: url(https://opmw.perfectworld.com/en/images/index231123/link_store.png);
+        background-size: 100% auto;
+    }
+    .lcb_wrap .btn_yy {
+        margin: 0.9rem auto 0;
+    }
+
+    /* role */
+    .section_role {
+        position: relative;
+        width: 25.6rem;
+        height: 100%;
+        background: url(../images/about/about_bg.png) center center no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    /* .section_t_role {
+        position: absolute;
+        width: 5.75rem;
+        height: 0.94rem;
+        left: 0.57rem;
+        top: 1.1rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/section_t_role.png);
+        background-size: 100% auto;
+        z-index: 5;
+    } */
+    .role_swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .role_swiper .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .role_center {
+        position: absolute;
+        width: 100%;
+        height: 8.4rem;
+        left: 0;
+        top: 50%;
+        margin-top: -3.8rem;
+    }
+    .role_tab_line {
+        position: absolute;
+        width: 25.6rem;
+        height: 0.71rem;
+        left: 0;
+        top: 6.18rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_line.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .role_decorative {
+        position: absolute;
+        width: 15.7rem;
+        height: 6.19rem;
+        top: 0;
+        right: 0;
+    }
+    .role_qiyu .role_decorative {
+        background: url(../images/about/slot1_lslider.png);
+        background-size: 100% auto;
+    }
+    .role_jns .role_decorative {
+        background: url(../images/about/slot2_lslider.png);
+        background-size: 100% auto;
+    }
+    .role_yzws .role_decorative {
+        background: url(../images/about/slot3_lslider.png);
+        background-size: 100% auto;
+    }
+    .role_snk .role_decorative {
+        background: url(../images/about/slot4_lslider.png);
+        background-size: 100% auto;
+    }
+    .role_smile .role_decorative {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/smile_decorative.png);
+        background-size: 100% auto;
+    }
+    .role_mks .role_decorative {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/mks_decorative.png);
+        background-size: 100% auto;
+    }
+
+    .role_info {
+        position: absolute;
+        width: 10.11rem;
+        height: 1.87rem;
+        left: 0.7rem;
+        top: -0.15rem;
+    }
+    .role_qiyu .role_info {
+        background: url(../images/about/slot1_title.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_jns .role_info {
+        background: url(../images/about/slot2_title.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_yzws .role_info {
+        background: url(../images/about/slot3_title.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_snk .role_info {
+        background: url(../images/about/slot4_title.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_smile .role_info {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_info_smile.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_mks .role_info {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_info_mks.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    .role_img {
+        position: absolute;
+        z-index: 2;
+    }
+    .role_img_m {
+        display: none;
+    }
+    .role_qiyu .role_img {
+        width: 7.88rem;
+        height: 15.16rem;
+        left: 9.77rem;
+        top: -1.08rem;
+    }
+    .role_jns .role_img {
+        width: 11.609rem;
+        height: 23.036rem;
+        left: 10.07rem;
+        top: -4.5rem;
+    }
+    .role_yzws .role_img {
+        width: 8.7395rem;
+        height: 20.6789rem;
+        left: 10rem;
+        top: -5rem;
+    }
+    .role_snk .role_img {
+        width: 10rem;
+        height: 18.53rem;
+        left: 9.5rem;
+        top: -1.54rem;
+    }
+    .role_smile .role_img {
+        width: 12.37rem;
+        height: 17.51rem;
+        left: 10.66rem;
+        top: -2.06rem;
+    }
+    .role_mks .role_img {
+        width: 15.5rem;
+        height: 17.34rem;
+        left: 7.4rem;
+        top: -1.7rem;
+    }
+
+    .role_video_box {
+        position: absolute;
+        width: 6.57rem;
+        height: 3.69rem;
+        left: 4.33rem;
+        top: 2.24rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_video_bg.png) no-repeat;
+        background-size: 100% 100%;
+        z-index: 5;
+    }
+    .role_video_box video {
+        position: absolute;
+        width: 6.55rem;
+        height: 3.68rem;
+        left: -0.17rem;
+        top: -0.17rem;
+    }
+    .role_video_tab_box {
+        position: absolute;
+        width: 6.6rem;
+        height: 0.95rem;
+        left: 4.05rem;
+        top: 6.03rem;
+        z-index: 5;
+    }
+    .role_video_tab_box li {
+        float: left;
+        width: 0.9rem;
+        height: 0.95rem;
+        margin-right: 0.14rem;
+        cursor: pointer;
+    }
+    .role_video_tab_box li.on {
+        background-position: right top;
+    }
+    .qiyu_video_tab1 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/qiyu_video_tab1.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .qiyu_video_tab2 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/qiyu_video_tab2.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .qiyu_video_tab3 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/qiyu_video_tab3.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .yzws_video_tab1 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/yzws_video_tab1.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .yzws_video_tab2 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/yzws_video_tab2.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .yzws_video_tab3 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/yzws_video_tab3.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .yzws_video_tab4 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/yzws_video_tab4.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .smile_video_tab1 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/smile_video_tab1.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .smile_video_tab2 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/smile_video_tab2.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .smile_video_tab3 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/smile_video_tab3.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .mks_video_tab1 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/mks_video_tab1.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .mks_video_tab2 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/mks_video_tab2.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .mks_video_tab3 {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/mks_video_tab3.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .jns_video_tab1 {
+        background: url(https://1wanmei.com/images/main2305/jns_video_tab1.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .jns_video_tab2 {
+        background: url(https://1wanmei.com/images/main2305/jns_video_tab2.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .jns_video_tab3 {
+        background: url(https://1wanmei.com/images/main2305/jns_video_tab3.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .snk_video_tab1 {
+        background: url(https://1wanmei.com/images/main2305/snk_video_tab1.png) 0 0 no-repeat;
+        background-size: auto 100%;
+    }
+    .snk_video_tab2 {
+        background: url(https://1wanmei.com/images/main2305/snk_video_tab2.png) 0 0 no-repeat;
+        background-size: auto 100%;
+    }
+    .snk_video_tab3 {
+        background: url(https://1wanmei.com/images/main2305/snk_video_tab3.png) 0 0 no-repeat;
+        background-size: auto 100%;
+    }
+    .role_video_text {
+        position: absolute;
+        width: 9rem;
+        height: 2.2rem;
+        left: 1.2rem;
+        top: 2.7rem;
+        font-size: .4rem;
+        line-height: 0.6rem;
+        color: #cfd2e0;
+        text-align: justify;
+    }
+
+    .role_video_text2 {
+        position: absolute;
+        width: 9rem;
+        height: 2.2rem;
+        left: 1.2rem;
+        top: 2.7rem;
+        font-size: .3rem;
+        line-height: 0.6rem;
+        color: #cfd2e0;
+        text-align: left;
+    }
+
+    .appear-from-bottom {
+        opacity: 0; /* Initially set opacity to 0 */
+        transform: translateY(100%); /* Move the text below the container */
+        animation: appearAnimation 1s ease-out forwards; /* Apply the animation */
+      }
+  
+      @keyframes appearAnimation {
+        to {
+          opacity: 1; /* Set opacity to 1 at the end of the animation */
+          transform: translateY(0); /* Move the text to its original position */
+        }
+    }
+
+    .role_tab {
+        position: absolute;
+        width: 8.37rem;
+        height: 3.18rem;
+        right: 1.2rem;
+        top: 50%;
+        margin-top: 1.6rem;
+        z-index: 10;
+    }
+    .btn_role_prev,
+    .btn_role_next {
+        position: absolute;
+        width: 1.18rem;
+        height: 2.98rem;
+        top: 0.1rem;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .btn_role_prev {
+        left: 0;
+        background: url(../images/about/btn_role_prev.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .btn_role_next {
+        right: 0;
+        background: url(../images/about/btn_role_next.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .role_tab_hide {
+        position: absolute;
+        width: 6.9rem;
+        height: 3.18rem;
+        left: 0.73rem;
+        top: 0;
+        overflow: hidden;
+    }
+    .role_tab_swiper {
+        position: absolute;
+        width: 6.5rem;
+        height: 3.18rem;
+        left: 0.12rem;
+        top: 0;
+    }
+    .role_tab_swiper .swiper-slide {
+        position: relative;
+        width: 1.82rem;
+        height: 3.18rem;
+    }
+    .role_tab_swiper .swiper-slide-thumb-active img {
+        display: block;
+    }
+    .role_card {
+        position: absolute;
+        width: 1.82rem;
+        height: 2.98rem;
+        left: 0;
+        top: 0.1rem;
+    }
+    .card_qiyu {
+        background: url(../images/about/slot1_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_jns {
+        background: url(../images/about/slot2_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_yzws {
+        background: url(../images/about/slot3_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_snk {
+        background: url(../images/about/slot4_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_smile {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_smile.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_mks {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_mks.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .role_card img {
+        display: none;
+        position: absolute;
+        width: 2.01rem;
+        height: 3.18rem;
+        left: -0.09rem;
+        top: -0.1rem;
+    }
+    /* news */
+    .section_news {
+        position: relative;
+        width: 25.6rem;
+        height: 100%;
+        background: url(../images/dex/section_dex_bg.jpg) center center no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    /* .section_t_news {
+        position: absolute;
+        width: 2.04rem;
+        height: 0.94rem;
+        left: 0.57rem;
+        top: 1.2rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/section_t_news.png);
+        background-size: 100% auto;
+        z-index: 5; */
+    }
+    .news_wrap {
+        position: absolute;
+        width: 19.47rem;
+        height: 8.12rem;
+        right: 0;
+        top: 50%;
+        margin-top: -4.06rem;
+
+        background-size: 100% auto;
+    }
+
+    /* .news_title {    
+        position: absolute;
+        width: 19.47rem;
+        height: 8.12rem;
+        right: 0;
+        top: 50%;
+        margin-top: -4.06rem;
+        background: url(../images/dex/dex_cont_bg.png);
+        background-size: 100% auto;
+    } */
+
+    .longjuan {
+        position: absolute;
+        width: 10.29rem;
+        height: 8.44rem;
+        left: -5.7rem;
+        top: -0.7rem;
+        background: url(../images/dex/dex_people.png);
+        background-size: 100% auto;
+    }
+
+    /* .news_pic_box {
+        position: absolute;
+        width: 7.71rem;
+        height: 4.5rem;
+        right: 12.68rem;
+        top: 2.76rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_pic_bg.png) center top no-repeat;
+        background-size: 100% auto;
+    } */
+
+    .news_swiper {
+        position: absolute;
+        width: 4.34rem;
+        height: 4.87rem;
+        left: 1rem;
+        top: 2.5rem;
+        overflow: visible;
+
+    }
+    
+    /* .news_swiper .swiper-slide,
+    .news_swiper .swiper-slide img {
+        width: 7.34rem;
+        height: 3.87rem;
+    } */
+    .news_page {
+        position: absolute;
+        width: 100%;
+        height: 0.11rem;
+        left: 0;
+        bottom: 0;
+        text-align: right;
+    }
+    .news_page span {
+        display: inline-block;
+        width: 0.4rem;
+        height: 0.11rem;
+        margin-left: 0.1rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_page.png);
+        background-size: 100% auto;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 0;
+    }
+    .news_page span.swiper-pagination-bullet-active {
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_page_on.png);
+        background-size: 100% auto;
+    }
+
+    .news_box {
+        position: absolute;
+        width: 8.72rem;
+        height: 5.12rem;
+        right: 4rem;
+        top: 2.6rem;
+    }
+    .news_tab {
+        width: 100%;
+        height: 0.54rem;
+        border-bottom: 0.02rem solid #373d6d;
+    }
+    .news_tab li {
+        position: relative;
+        float: left;
+        width: 1.76rem;
+        height: 0.47rem;
+        margin-left: 0.54rem;
+        font-size: 0.32rem;
+        line-height: 0.47rem;
+        color: #b0b3bf;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_tab.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .news_tab li.margin0 {
+        margin: 0;
+    }
+    .news_tab li.on {
+        color: #fff;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_tab_on.png);
+        background-size: 100% auto;
+        cursor: default;
+    }
+    .news_list_cont {
+        display: none;
+        position: relative;
+        width: 8.72rem;
+        height: 4.4rem;
+        margin-top: -0.2rem;
+    }
+    .news_list_cont ul {
+        width: 100%;
+        height: 3.72rem;
+    }
+    /* .news_list_cont ul li {
+        position: relative;
+        width: 100%;
+        height: 0.93rem;
+        border-bottom: 0.01rem dashed #3f467d;
+    } */
+    
+    /* .news_item_line {
+        display: none;
+        position: absolute;
+        width: 9.75rem;
+        height: 100%;
+        left: -0.5rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_line_hover.png);
+        background-size: 100% auto;
+    } */
+
+    .news_list_cont ul li:hover .news_item_line {
+        display: block;
+    }
+    .news_item_cont {
+        position: relative;
+        width: 100%;
+        height: 100;
+        overflow: normal;
+        z-index: 2;
+    }
+
+    /* .news_tag {
+        float: left;
+        width: 0.85rem;
+        height: 0.27rem;
+        margin: 0.33rem 0 0 0.12rem;
+        padding-right: 0.07rem;
+        font-size: 0.18rem;
+        line-height: 0.28rem;
+        color: #fff;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_tag_bg.png);
+        background-size: 100% auto;
+    } */
+    
+    .news_m {
+    float: left;
+    width: 7rem;
+    margin-left: 0.48rem;
+    color: #a4a4a7;
+    overflow: visible;
+    white-space: normal;
+    margin-bottom: 15px;
+    font-size: 0.26rem;
+    text-align: justify;   
+    }
+
+    .buy_title {
+        font-size: 0.29rem;
+        color: #fff;
+    }
+
+    /* .news_m a {
+        font-size: 0.26rem;
+        line-height: 0.93rem;
+        color: #fff;
+        text-align: justify;
+    } */
+
+    
+    /* .news_time {
+        float: right;
+        font-size: 0.22rem;
+        line-height: 0.93rem;
+        color: #97a1e5;
+    } */
+    /* .news_more {
+        position: absolute;
+        width: 1.24rem;
+        height: 0.46rem;
+        right: 0;
+        bottom: 0;
+        font-size: 0.24rem;
+        line-height: 0.48rem;
+        color: #fff;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/more_bg.png) no-repeat;
+        background-size: 100% auto;
+    } */
+    .news_more:hover {
+        background-position: 0 -0.46rem;
+    }
+
+    .gofirst {
+        display: none;
+        position: absolute;
+        width: 0.7rem;
+        height: 0.7rem;
+        right: 0.3rem;
+        bottom: 1.2rem;
+        background: url(../images/home/arrow.png);
+        background-size: 100% auto;
+        z-index: 10;
+        cursor: pointer;
+    }
+    /* foot */
+    #foot_wrap.transform_up {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+    }
+    #foot_wrap {
+        position: absolute;
+        width: 100%;
+        height: 85px;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        transform: translate3d(0, 85px, 0);
+        -webkit-transform: translate3d(0, 85px, 0);
+        -ms-transform: translate3d(0, 85px, 0);
+        transition: transform 0.3s;
+        -webkit-transition: transform 0.3s;
+        -ms-transition: transform 0.3s;
+    }
+
+
+    /* pop_video */
+    .pop_video_cont {
+        position: absolute;
+        width: 17.67rem;
+        height: 10.24rem;
+        left: 50%;
+        top: 50%;
+        margin: -5.12rem 0 0 -8.83rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/pop_video_bg.png);
+        background-size: 100% auto;
+    }
+    .zs_video {
+        position: absolute;
+        width: 12.08rem;
+        height: 0.16rem;
+        left: 0;
+        top: -0.3rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/zs_video.png);
+        background-size: 100% auto;
+    }
+    .close_video {
+        position: absolute;
+        width: 0.81rem;
+        height: 0.81rem;
+        right: -0.75rem;
+        top: -0.75rem;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/icon_close.png);
+        background-size: 100% auto;
+        cursor: pointer;
+    }
+    .pop_v_box {
+        position: absolute;
+        width: 17.04rem;
+        height: 9.58rem;
+        left: 0.31rem;
+        top: 0.31rem;
+        overflow: hidden;
+    }
+    .pop_v_box div {
+        width: 100%;
+        height: 100%;
+    }
+    /* pop_yy */
+    #pop_yy_succ .msg_line_bg,
+    #pop_yy_done .msg_line_bg,
+    #pop_qidai .msg_line_bg {
+        height: 3.3rem;
+        margin-top: 1.9rem;
+    }
+    .succ_text {
+        display: flex;
+        width: 5.5rem;
+        height: 3.3rem;
+        margin: 0 auto;
+        font-size: 0.38rem;
+        font-weight: bold;
+        line-height: 0.5rem;
+        color: #353438;
+        align-items: center;
+    }
+    .succ_ok {
+        width: 100%;
+        height: 100%;
+        background: url(https://opmw.perfectworld.com/public/images/login/ok_en.png) no-repeat center;
+        background-size: 100% auto;
+    }
+    .bind_phone_button {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 5.1rem;
+    }
+    .bind_phone_button a img {
+        display: block;
+        width: 5.95rem;
+        height: 0.87rem;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    #pop_yy_done .succ_text,
+    #pop_qidai .succ_text {
+        justify-content: center;
+        text-align: center;
+    }
+    #pop_yy_done .succ_text {
+        font-size: 0.32rem;
+    }
+    .link_view_more {
+        display: block;
+        width: 4.74rem;
+        height: 0.86rem;
+        margin: 0 auto;
+        background: url(https://opmw.perfectworld.com/en/images/index2306/btn_view_more.png);
+        background-size: 100% auto;
+    }
+
+    .link_fb {
+        display: none;
+    }
+    .select_button_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+@media screen and (max-width: 750px) {
+    .wrap {
+        position: relative;
+        width: 750px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .sns_box {
+        display: none;
+    }
+    .btn_event {
+        position: absolute;
+        width: 210px;
+        height: 77px;
+        right: 0;
+        top: 530px;
+        z-index: 10;
+    }
+    .btn_event img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .log_box {
+        display: none;
+        position: absolute;
+        width: 420px;
+        height: 47px;
+        right: 34px;
+        top: 135px;
+        z-index: 8;
+    }
+    .log_box .btn_login {
+        position: absolute;
+        width: 140px;
+        height: 47px;
+        right: 0;
+        top: 0;
+        /* background: url(https://opmw.perfectworld.com/net/240115invite/en/images/btn_login2.png); */
+    }
+    .user_info_box {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+    }
+    .user_info_box .btn_logout {
+        float: right;
+        width: 140px;
+        height: 47px;
+        /* background: url(https://opmw.perfectworld.com/net/240115invite/en/images/btn_logout2.png); */
+    }
+    .user_info_box p {
+        float: right;
+        height: 47px;
+        padding-right: 10px;
+        font-size: 24px;
+        line-height: 47px;
+        color: #fff;
+        text-shadow: 0 0 1px #1b1e35, 0 0 3px #1b1e35, 0 0 5px #1b1e35, 0 0 7px #1b1e35;
+    }
+
+    .page_swiper,
+    .page_swiper .page_wrapper {
+        display: block;
+        height: auto;
+    }
+    /* head */
+    .section_head {
+        position: relative;
+        height: 1285px;
+        background: url(../images/mobile/head_bg.jpg) center center no-repeat;
+    }
+    #bg_video {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .link_jup {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        right: 50px;
+        top: 340px;
+        background: url(../images/mobile/icon_jup.png);
+    }
+    .link_ds {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        right: 50px;
+        top: 430px;
+        background: url(../images/mobile/icon_ds.png);
+    }
+    .link_tg {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        right: 50px;
+        top: 520px;
+        background: url(../images/mobile/icon_tg.png);
+    }
+    .link_X {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        right: 50px;
+        top: 610px;
+        background: url(../images/mobile/icon_x.png);
+    }
+    .slogan {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 275px;
+        top: 20px;
+    }
+    .btn_wrap1 {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 91px;
+        left: 0;
+        top: 960px;
+        justify-content: center;
+        z-index: 5;
+    }
+    .btn_head_v {
+        display: block;
+        width: 144px;
+        height: 85px;
+        margin: 3px 12px 0;
+        background: url(../images/mobile/btn_video.png);
+    }
+    .btn_yy1 {
+        display: block;
+        width: 650px;
+        height: 97.176px;
+        margin: 50px 12px 0;
+    }
+    .btn_yy2 {
+        display: block;
+        width: 413px;
+        height: 62px;
+        margin: 0 0 -50px;
+    }
+    .btn_yy1_pc {
+        display: none;
+    }
+
+    #copy_text {
+        position: absolute;
+        width: 100%;
+        height: 14px;
+        left: 0;
+        top: 1204px;
+        font-size: 13px;
+        line-height: 14px;
+        color: #ebebeb;
+        text-align: center;
+        z-index: 10;
+    }
+    .icon_down {
+        width: 68px;
+        height: 35px;
+        background: url(../images/mobile/icon_down.png);
+        position: absolute;
+        top: 1230px;
+        left: 50%;
+        margin-left: -34px;
+        animation: key_downup 0.5s infinite alternate;
+        -webkit-animation: key_downup 0.5s infinite alternate;
+        -ms-animation: key_downup 0.5s infinite alternate;
+        z-index: 10;
+    }
+    @keyframes key_downup {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 20px, 0);
+        }
+    }
+    @-webkit-keyframes key_downup {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 20px, 0);
+        }
+    }
+    @-ms-keyframes key_downup {
+        0% {
+            -ms-transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -ms-transform: translate3d(0, 20px, 0);
+        }
+    }
+    .storeBtns {
+        position: absolute;
+        top: 1084px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        z-index: 2;
+    }
+    .store_s a {
+        width: 229px;
+        height: 69px;
+        margin: 0 5px;
+    }
+    .appStore {
+        background: url(https://opmw.perfectworld.com/en/images/index231219/appStore.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .googleStore {
+        background: url(https://opmw.perfectworld.com/en/images/index231219/googleStore.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .huaweiStore {
+        background: url(https://opmw.perfectworld.com/en/images/index231219/huaweiStore.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .down_launcher {
+        display: none;
+    }
+
+    .selectLag {
+        position: absolute;
+        width: 81px;
+        height: 77px;
+        right: 30px;
+        top: 34px;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/select.png) no-repeat center 0;
+        z-index: 10;
+    }
+    .selectlist {
+        width: 81px;
+        position: absolute;
+        left: 0;
+        top: 77px;
+        background: rgba(43, 43, 43, 0.75);
+        display: none;
+    }
+    .selectLag:hover .selectlist {
+        display: block;
+    }
+    .selectlist a,
+    .selectlist span {
+        display: block;
+        width: 81px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/selectMenu.png) no-repeat -99999px 0;
+        background-size: 100% auto;
+    }
+    .selectlist .on,
+    .selectlist a:hover {
+        background-position: 0 0;
+        color: #2c2d2f;
+    }
+
+    /* lcb */
+    .section_lcb {
+        position: relative;
+        height: 1679px;
+        background: url(../images/mobile/rm_bg.jpg);
+        overflow: hidden;
+    }
+    .section_t_lcb {
+        width: 444px;
+        height: 91px;
+        /* background: url(https://opmw.perfectworld.com/en/m/images/index231123/section_t_lcb.png); */
+    }
+    .lcb_wrap {
+        position: relative; /*height: 1440px;*/
+        margin-top: 26px; /*overflow: hidden;*/
+    }
+    .lcb_slogan {
+        width: 712px;
+        height: 94px;
+        margin: 0 auto;
+        background: url(../images/mobile/roadmap_slogan.png);
+    }
+    .lcb_cont {
+        position: relative;
+        width: 750px;
+        height: 1336px;
+        margin-top: 14px;
+    }
+    .lcb_num {
+        position: absolute;
+        width: 141px;
+        height: 1158px;
+        left: 27px;
+        top: 74px;
+        background: url(../images/mobile/rm_num.png);
+    }
+    .progress_line {
+        position: absolute;
+        width: 7px;
+        height: 100%;
+        left: 178px;
+        top: 0;
+        background-color: #000;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    #process_w {
+        width: 100%;
+        height: 0;
+        background: #fff;
+        background: linear-gradient(#fff, #9da2c1);
+        border-radius: 4px;
+    }
+    .lcb_gift {
+        position: absolute;
+        width: 579px;
+        height: 100%;
+        left: 171px;
+        top: 0;
+    }
+    .lcb_gift li {
+        position: relative;
+        width: 579px;
+        height: 226px;
+        margin-top: 15px;
+    }
+    .prize_bg_pc {
+        display: none;
+    }
+    #prize_p1 {
+        margin-top: 0px;
+    }
+    #prize_p4 {
+        height: 376px;
+    }
+    .lcb_gift li span {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -26px);
+        background: url(../images/mobile/icon_point.png);
+    }
+    .lcb_gift li.on span {
+        background: url(../images/mobile/icon_point_on.png);
+    }
+    .lcb_gift li .lock {
+        position: absolute;
+        width: 30px;
+        height: 31px;
+        right: 25px;
+        top: -13px;
+        background: url(../images/mobile/icon_suo.png);
+    }
+    .lcb_gift li.on .lock {
+        display: none;
+    }
+    .lcb_gift li .prize_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .lcb_gift li .prize_bg img {
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
+    .lcb_gift li .prize_bg1 {
+        display: block;
+    }
+    .lcb_gift li .prize_bg2 {
+        display: none;
+    }
+    .lcb_gift li.on .prize_bg1 {
+        display: none;
+    }
+    .lcb_gift li.on .prize_bg2 {
+        display: block;
+    }
+    .link_store {
+        display: block;
+        width: 538px;
+        height: 80px;
+        margin: 35px auto 0;
+        /* background: url(https://opmw.perfectworld.com/en/m/images/index231123/link_store.png); */
+    }
+    .lcb_wrap .btn_yy {
+        margin: 22px auto 0;
+    }
+    /* role */
+    .section_role {
+        position: relative;
+        height: 1326px;
+        background: url(../images/mobile/about_bg.jpg) center center no-repeat;
+    }
+    .section_t_role {
+        position: relative;
+        width: 429px;
+        height: 90px;
+        /* background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/section_t_role.png); */
+        z-index: 5;
+    }
+    .role_swiper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .role_swiper .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .role_center {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .role_tab_line {
+        display: none;
+    }
+
+    .role_decorative {
+        position: absolute;
+        width: 709px;
+        height: 833px;
+        top: 91px;
+        right: 0;
+    }
+    .role_qiyu .role_decorative {
+        background: url(../images/mobile/slot1_bg_m.png);
+    }
+    .role_jns .role_decorative {
+        background: url(../images/mobile/slot2_bg_m.png);
+    }
+    .role_yzws .role_decorative {
+        background: url(../images/mobile/slot3_bg_m.png);
+    }
+    .role_snk .role_decorative {
+        background: url(../images/mobile/slot4_bg_m.png);
+    }
+    .role_smile .role_decorative {
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/smile_decorative.png);
+    }
+    .role_mks .role_decorative {
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/mks_decorative.png);
+    }
+
+    .role_info {
+        position: absolute;
+        width: 670px;
+        height: 179px;
+        right: 28px;
+        bottom: 500px;
+        z-index: 2;
+    }
+    .role_qiyu .role_info {
+        background: url(../images/mobile/slot1_desc.png) right bottom no-repeat;
+    }
+    .role_jns .role_info {
+        background: url(../images/mobile/slot2_desc.png) right bottom no-repeat;
+    }
+    .role_yzws .role_info {
+        background: url(../images/mobile/slot3_desc.png) right bottom no-repeat;
+    }
+    .role_snk .role_info {
+        background: url(../images/mobile/slot4_desc.png) right bottom no-repeat;
+    }
+    .role_smile .role_info {
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/role_info_smile.png) right bottom no-repeat;
+    }
+    .role_mks .role_info {
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/role_info_mks.png) right bottom no-repeat;
+    }
+
+    .role_img {
+        position: absolute;
+        left: 0;
+    }
+    .role_img_pc {
+        display: none;
+    }
+    .role_qiyu .role_img {
+        width: 700px;
+        height: 1,389.0257px;
+        left: -80px;
+        top: 210px;
+    }
+    .role_jns .role_img {
+        width: 800px;
+        height: 1,346.79px;
+        left: -60px;
+        top: -35px;
+    }
+    .role_yzws .role_img {
+        width: 600px;
+        height: 1,419.698px;
+        left:0;
+        top: 0;
+    }
+    .role_snk .role_img {
+        width: 739px;
+        height: 1,369.415px;
+        top: 200px;
+    }
+    .role_smile .role_img {
+        width: 750px;
+        height: 1268px;
+        top: 8px;
+    }
+    .role_mks .role_img {
+        width: 750px;
+        height: 1201px;
+        top: 72px;
+    }
+
+    .role_video_box,
+    .role_video_tab_box,
+    .role_video_text,
+    .role_video_text2 {
+        display: none;
+    }
+
+    .role_tab {
+        position: absolute;
+        width: 750px;
+        height: 259px;
+        left: 0;
+        top: 946px;
+        z-index: 10;
+    }
+    .btn_role_prev,
+    .btn_role_next {
+        position: absolute;
+        width: 97px;
+        height: 247px;
+        top: 6px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .btn_role_prev {
+        left: 12px;
+        background: url(../images/about/btn_role_prev.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .btn_role_next {
+        right: 12px;
+        background: url(../images/about/btn_role_next.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .role_tab_hide {
+        position: absolute;
+        width: 616px;
+        height: 259px;
+        left: 68px;
+        top: 0;
+        overflow: hidden;
+    }
+    .role_tab_swiper {
+        position: absolute;
+        width: 580px;
+        height: 259px;
+        left: 15px;
+        top: 0;
+    }
+    .role_tab_swiper .swiper-slide {
+        position: relative;
+        width: 148px;
+        height: 259px;
+    }
+    .role_tab_swiper .swiper-slide-thumb-active img {
+        display: block;
+    }
+    .role_card {
+        position: absolute;
+        width: 148px;
+        height: 242px;
+        left: 0;
+        top: 8px;
+    }
+    .card_qiyu {
+        background: url(../images/about/slot1_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_jns {
+        background: url(../images/about/slot2_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_yzws {
+        background: url(../images/about/slot3_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_snk {
+        background: url(../images/about/slot4_u.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_smile {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_smile.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .card_mks {
+        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_mks.png) no-repeat;
+        background-size: auto 100%;
+    }
+    .role_card img {
+        display: none;
+        position: absolute;
+        width: 164px;
+        height: 259px;
+        left: -8px;
+        top: -8px;
+    }
+    /* news */
+    .section_news {
+        position: relative;
+        height: 1230px;
+        background: url(../images/mobile/dex_bg.jpg);
+    }
+    .section_t_news {
+        position: relative;
+        width: 692px;
+        height: 90px;
+        /* background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/section_t_news.png); */
+    }
+    .longjuan {
+        display: none;
+    }
+    .news_pic_box {             /*edited */
+        position: relative;
+        width: 693px;
+        height: 420px;
+        margin: 750px 0 0 0;
+        /* background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/news_pic_bg.png) center top no-repeat; */
+        z-index: 1;
+    }
+    .news_swiper {  /*edited - controls DEX Integration */
+        position: absolute;
+        width: 670px;
+        height: 600px;
+        left: -400px;
+        top: -600px;
+        overflow: hidden;
+    }
+    .news_swiper .swiper-slide,
+    .news_swiper .swiper-slide img {
+        width: 659px;
+        height: 348px;
+    }
+    .news_page {
+        position: absolute;
+        width: 100%;
+        height: 11px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    .news_page span {
+        display: inline-block;
+        width: 40px;
+        height: 11px;
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_page.png);
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 0;
+    }
+    .news_page span.swiper-pagination-bullet-active {
+        background: url(https://opmw.perfectworld.com/en/images/index2308_1/news_page_on.png);
+    }
+
+    .news_tab {
+        width: 696px;
+        height: 52px;
+        margin: 64px auto 0;
+        border-bottom: 2px solid #373d6d;
+    }
+    .news_tab li {
+        position: relative;
+        float: left;
+        width: 163px;
+        height: 43px;
+        margin-left: 14px;
+        font-size: 28px;
+        line-height: 43px;
+        color: #b0b3bf;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/news_tab.png) no-repeat;
+        cursor: pointer;
+    }
+    .news_tab li.margin0 {
+        margin: 0;
+    }
+    .news_tab li.on {
+        color: #fff;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/news_tab_on.png);
+        cursor: default;
+    }
+    .news_list_cont {
+        display: none;
+        position: relative;
+        width: 696px;
+        margin: 0 auto;
+    }
+    .news_list_cont ul {
+        width: 100%;
+        height: 384px;
+    }
+    .news_list_cont ul li {  /* edited - controls how to buy steps */
+        display:none;
+        position: relative;
+        top:-400px;
+        left:-250px;
+        width: 100%;
+        height: 160px;
+        /* border-bottom: 1px dashed #3f467d; */
+        overflow: visible;
+        white-space: normal;
+    }
+    .news_tag {
+        float: left;
+        width: 83px;
+        height: 27px;
+        margin: 34px 0 0 12px;
+        padding-right: 9px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/news_tag_bg.png);
+    }
+
+    .news_wrap {            /*edited - controls "HOW TO BUY" bg*/ 
+        position: absolute;
+        width: 19.47rem;
+        height: 8.12rem;
+        top: 50%;
+        margin-top: -4.06rem;
+
+        background-size: 100% auto;
+    }
+
+
+    .news_m {             /*edited */ 
+
+        float: left;
+        width: 500px;
+        margin-left: -180px;
+        color: #a4a4a7;            /*edited - color of steps*/ 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        font-size: 20px;
+    }
+
+    .buy_title{              /*edited */
+        color: white !important;
+        font-size: 30px !important;
+    }
+    
+    .news_m a {
+        font-size: 26px;
+        line-height: 95px;
+        color: #fff;
+    }
+    .news_time {
+        float: right;
+        font-size: 22px;
+        line-height: 95px;
+        color: #97a1e5;
+    }
+    .news_more {
+        display: block;
+        width: 250px;
+        height: 71px;
+        margin: 48px auto 0;
+        font-size: 26px;
+        line-height: 72px;
+        color: #fff;
+        text-align: center;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2308_1/more_bg.png) no-repeat;
+    }
+
+    .gofirst {
+        display: none;
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        right: 20px;
+        bottom: 20px;
+        background: url(../images/home/arrow.png);
+        z-index: 10;
+    }
+    /* pop_video */
+    .pop_video_cont {
+        position: absolute;
+        width: 665px;
+        height: 389px;
+        left: 50%;
+        top: 50%;
+        margin: -195px 0 0 -332px;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/pop_video_bg.png);
+    }
+    .zs_video {
+        position: absolute;
+        width: 534px;
+        height: 13px;
+        left: 0;
+        top: -20px;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/zs_video.png);
+    }
+    .close_video {
+        position: absolute;
+        width: 40px;
+        height: 41px;
+        right: -30px;
+        top: -40px;
+        background: url(https://opmw.perfectworld.com/en/m/images/index2306/icon_close.png);
+        cursor: pointer;
+    }
+    .pop_v_box {
+        position: absolute;
+        width: 635px;
+        height: 356px;
+        left: 12px;
+        top: 12px;
+        overflow: hidden;
+    }
+    .pop_v_box div {
+        width: 100%;
+        height: 100%;
+    }
+    /* pop_yy */
+    .succ_text {
+        display: flex;
+        width: 486px;
+        height: 314px;
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #353438;
+        align-items: center;
+    }
+    .succ_ok {
+        width: 100%;
+        height: 100%;
+        background: url(https://opmw.perfectworld.com/public/images/login/ok_en.png) no-repeat center;
+        background-size: 100% auto;
+    }
+    .bind_phone_button {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 410px;
+    }
+    .bind_phone_button a {
+        display: block;
+        width: 595px;
+        height: 87px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    #pop_qidai .pop_succ_box {
+        margin-top: 170px;
+    }
+    #pop_qidai .succ_text {
+        justify-content: center;
+        text-align: center;
+    }
+}
