@@ -593,7 +593,7 @@ span {
         background-size: 100% auto;
     }
     .role_smile .role_decorative {
-        background: url(https://opmw.perfectworld.com/en/images/index2306/smile_decorative.png);
+        background: url(../images/about/slot5_lslider.png);
         background-size: 100% auto;
     }
     .role_mks .role_decorative {
@@ -625,7 +625,7 @@ span {
         background-size: 100% auto;
     }
     .role_smile .role_info {
-        background: url(https://opmw.perfectworld.com/en/images/index2306/role_info_smile.png) no-repeat;
+        background: url(../images/about/slot5_title.png) no-repeat;
         background-size: 100% auto;
     }
     .role_mks .role_info {
@@ -665,9 +665,13 @@ span {
         top: -1.54rem;
     }
     .role_smile .role_img {
-        width: 12.37rem;
-        height: 17.51rem;
-        left: 10.66rem;
+        /* width: 12.37rem;
+        height: 17.51rem; */
+        width: 11rem;
+        height: 15.57rem;
+        /* width: 10rem;
+        height: 14.155rem; */
+        left: 11rem;
         top: -2.06rem;
     }
     .role_mks .role_img {
@@ -825,9 +829,10 @@ span {
         }
     }
 
-    .role_tab {
+    .role_tab { /*container of the tab*/
         position: absolute;
-        width: 8.37rem;
+        /* width: 8.37rem; */
+        width: 9.5rem;
         height: 3.18rem;
         right: 1.2rem;
         top: 50%;
@@ -853,24 +858,25 @@ span {
         background: url(../images/about/btn_role_next.png) no-repeat;
         background-size: auto 100%;
     }
-    .role_tab_hide {
+    .role_tab_hide { /*hides the tab*/
         position: absolute;
-        width: 6.9rem;
+        /* width: 6.9rem; */
+        width: 8.5rem;
         height: 3.18rem;
         left: 0.73rem;
         top: 0;
         overflow: hidden;
     }
-    .role_tab_swiper {
+    .role_tab_swiper { /*how far tabs are far from each other*/
         position: absolute;
-        width: 6.5rem;
+        width: 6rem;
         height: 3.18rem;
         left: 0.12rem;
         top: 0;
     }
     .role_tab_swiper .swiper-slide {
         position: relative;
-        width: 1.82rem;
+        width: 0rem;
         height: 3.18rem;
     }
     .role_tab_swiper .swiper-slide-thumb-active img {
@@ -900,7 +906,7 @@ span {
         background-size: auto 100%;
     }
     .card_smile {
-        background: url(https://opmw.perfectworld.com/en/images/index2306/role_tab_smile.png) no-repeat;
+        background: url(../images/about/slot5_u.png) no-repeat;
         background-size: auto 100%;
     }
     .card_mks {
@@ -1925,7 +1931,7 @@ span {
     .section_news {
         position: relative;
         height: 1230px;
-        background: url(../images/mobile/dex_bg.jpg);
+        background: url(../images/mobile/dex_bg.png);
     }
     .section_t_news {
         position: relative;
